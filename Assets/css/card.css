@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.card-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.card-flip-checkbox {
+  display: none;
+}
+
+.card {
+  position: relative;
+  max-width: 650px;
+  min-height: 371px;
+  aspect-ratio: 7 / 4;
+  margin: 0 auto;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.card-flip-checkbox:checked ~ .card {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+  .card-front,
+  .card-back {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.accent-shape {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 20%,
+    transparent 70%
+  );
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 80%;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-link {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+.social-links {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  position: relative;
+  display: inline-block;
+}
+
+.social-link svg {
+  width: 28px;
+  height: 28px;
+  transition: background 0.3s ease;
+}
+
+.social-link:hover svg {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.social-link::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -1.6em;
+  padding: 4px 4px 4px 8px;
+  color: #ffffff;
+  margin-left: -20vh;
+  white-space: nowrap;
+  border-radius: 5px;
+  background-color: rgba(201, 203, 216, 0.14);
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.social-link:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.page-peel {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.page-peel svg {
+  width: 24px;
+  height: 24px;
+}
+
+.page-peel-back {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 320px;
+    min-height: 560px;
+    aspect-ratio: 4 / 7;
+  }
+
+  .card-flip-checkbox:checked ~ .card {
+    transform: rotateX(180deg);
+  }
+
+  .card-front,
+  .card-back {
+    padding: 15px;
+  }
+
+  .card-back {
+    transform: rotateX(180deg);
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+    max-width: 85%;
+  }
+
+  .contact-info {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
+  .contact-link {
+    font-size: 1.1rem;
+  }
+
+  .social-links {
+    bottom: 15px;
+    gap: 8px;
+  }
+
+  .social-link svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .page-peel svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .page-peel-back {
+    transform: rotateX(180deg);
+  }
+
+  .accent-shape {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-link::after {
+    margin-left: -15vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 300px;
+    min-height: 525px;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  .bio {
+    font-size: 0.85rem;
+    max-width: 90%;
+  }
+
+  .contact-link {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    bottom: 10px;
+  }
+
+  .social-link svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .page-peel svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .accent-shape {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social-link::after {
+    margin-left: -10vh;
+    font-size: 0.8rem;
+    padding: 2px 4px;
+  }
+}
