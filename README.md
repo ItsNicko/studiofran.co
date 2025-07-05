@@ -18,4 +18,4 @@ No credentials, just curiosity, time, and trial/error.
 
 ---
 
-🔗 [studiofran.co](https://studiofran.co)
+🔗 [studiofran.co](https://studiofran.co) [itsnicko-github-io.pages.dev/](https://itsnicko-github-io.pages.dev/)
