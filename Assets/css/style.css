@@ -51,7 +51,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  background-image: url(https://th.bing.com/th/id/OIP.HJ2q5Wke-Jo5l1WOpLh8nwHaEK?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3);
+  background-image: url('../static.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -449,3 +449,4 @@ p {
   justify-content: space-between;
   padding: 1em;
 }
+
