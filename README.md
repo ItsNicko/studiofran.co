@@ -12,6 +12,11 @@ This is my personal portfolio site, a place to share my builds, experiments, and
 - Blog posts and drafts
 - My setup, tools, and philosophy
 
+### ToDo
+- Projects
+- More Blogs
+- Optimize for iPhone
+
 ### 💡 Philosophy
 I build things I want to see exist. Sometimes they break — I fix them or rebuild.  
 No credentials, just curiosity, time, and trial/error.
