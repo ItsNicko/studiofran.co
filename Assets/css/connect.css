@@ -218,6 +218,13 @@
     margin: 0 auto;
     width: 100%;
   }
+  @media (hover: none) and (pointer: coarse) {
+  .card .content {
+    opacity: 1;
+    max-height: none;
+  }
+}
+
 
   .card {
     width: 100%;
@@ -268,4 +275,5 @@
     font-size: 12px;
   }
 }
+
 
