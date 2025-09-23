@@ -40,7 +40,7 @@
   outline: none;
 }
 
-/* Expanded states (works on hover, focus, or when active) */
+/* Expanded states (hover, focus, or active) */
 .card.active,
 .card:hover,
 .card:focus-within {
@@ -58,6 +58,13 @@
 .card:hover .content,
 .card:focus-within .content {
   opacity: 1;
+}
+
+/* Collapse the active card when another is hovered/focused */
+.showcase-container:hover .card.active:not(:hover),
+.showcase-container:focus-within .card.active:not(:focus-within) {
+  width: 80px;
+  height: 475px;
 }
 
 /* Background animation */
@@ -189,6 +196,12 @@
   .card:hover,
   .card:focus-within {
     height: 280px;
+  }
+
+  /* Collapse active card on mobile when another is focused/hovered */
+  .showcase-container:hover .card.active:not(:hover),
+  .showcase-container:focus-within .card.active:not(:focus-within) {
+    height: 60px;
   }
 
   .title-collapsed {
