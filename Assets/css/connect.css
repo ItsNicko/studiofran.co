@@ -67,6 +67,17 @@
   height: 475px;
 }
 
+/* Hide content + show title when collapsed */
+.showcase-container:hover .card.active:not(:hover) .content,
+.showcase-container:focus-within .card.active:not(:focus-within) .content {
+  opacity: 0;
+}
+
+.showcase-container:hover .card.active:not(:hover) .title-collapsed,
+.showcase-container:focus-within .card.active:not(:focus-within) .title-collapsed {
+  opacity: 1;
+}
+
 /* Background animation */
 .card::before {
   content: "";
@@ -202,6 +213,17 @@
   .showcase-container:hover .card.active:not(:hover),
   .showcase-container:focus-within .card.active:not(:focus-within) {
     height: 60px;
+  }
+
+  /* Hide content + show title when collapsed (mobile) */
+  .showcase-container:hover .card.active:not(:hover) .content,
+  .showcase-container:focus-within .card.active:not(:focus-within) .content {
+    opacity: 0;
+  }
+
+  .showcase-container:hover .card.active:not(:hover) .title-collapsed,
+  .showcase-container:focus-within .card.active:not(:focus-within) .title-collapsed {
+    opacity: 1;
   }
 
   .title-collapsed {
