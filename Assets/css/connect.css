@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
   transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1),
-    height 300ms cubic-bezier(0.4, 0, 0.2, 1);
+              height 300ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
   scroll-snap-align: center;
@@ -40,6 +40,7 @@
   outline: none;
 }
 
+/* Expanded states (works on hover, focus, or when active) */
 .card.active,
 .card:hover,
 .card:focus-within {
@@ -59,6 +60,7 @@
   opacity: 1;
 }
 
+/* Background animation */
 .card::before {
   content: "";
   position: absolute;
@@ -91,6 +93,7 @@
   50% { transform: translateX(10%); }
 }
 
+/* Title (collapsed view) */
 .title-collapsed {
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -102,6 +105,7 @@
   transition: opacity 300ms;
 }
 
+/* Content (expanded view) */
 .content {
   position: absolute;
   top: 0;
@@ -158,6 +162,7 @@
   font-size: 16px;
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
   .showcase-container {
     flex-direction: column;
@@ -179,6 +184,7 @@
     transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  /* Expanded states for mobile */
   .card.active,
   .card:hover,
   .card:focus-within {
