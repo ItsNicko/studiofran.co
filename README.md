@@ -2,7 +2,7 @@
 
 This is my personal portfolio site, a place to share my builds, experiments, and ideas.
 
-### Framewook
+### Framework
 - HTML & CSS (no frameworks, just hand-coded)
 - Hosted with Cloudflare Pages
 - Built in Visual Studio Code
