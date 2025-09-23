@@ -16,9 +16,6 @@
 .card {
   width: 80px;
   height: 475px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 14px;
   display: flex;
@@ -32,6 +29,11 @@
   scroll-snap-align: center;
   touch-action: pan-x;
   box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.1); /* very light transparent */
+  backdrop-filter: blur(8px);           /* keeps the glassy effect */
+  -webkit-backdrop-filter: blur(8px);   /* Safari support */
+}
+
 }
 
 .card.active {
@@ -266,3 +268,4 @@
     font-size: 12px;
   }
 }
+
