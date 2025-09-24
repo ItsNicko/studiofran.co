@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# unfinished areas
+Disallow: /admin/
+Disallow: /Blog-Drafts/
+Disallow: /private/
+
+# sitemap 
+# sitemap: https://yourdomain.com/sitemap.xml
