@@ -23,4 +23,4 @@ No credentials, just curiosity, time, and trial/error.
 
 ---
 
-🔗 [studiofran.co](https://studiofran.co) [itsnicko-github-io.pages.dev](https://itsnicko-github-io.pages.dev) [itsnicko.github.io/studiofran.co](https://itsnicko.github.io/studiofran.co)
+🔗 [studiofran.co](https://studiofran.co) | [itsnicko-github-io.pages.dev](https://itsnicko-github-io.pages.dev) | [itsnicko.github.io/studiofran.co](https://itsnicko.github.io/studiofran.co)
