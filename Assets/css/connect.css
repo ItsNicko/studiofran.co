@@ -30,8 +30,6 @@
   touch-action: pan-x;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.1); /* glassy effect */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   cursor: pointer;
   outline: none; /* remove tap outline */
 }
@@ -254,3 +252,4 @@
     font-size: 12px;
   }
 }
+
