@@ -3,7 +3,7 @@
 }
 
 .featured-post {
-  background: rgba(255, 255, 255, 0.05); /* lighter glass */
+  background: rgba(255, 255, 255, 0.15); /* lighter glass */
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
@@ -68,7 +68,7 @@
 }
 
 .post-card {
-  background: rgba(255, 255, 255, 0.05); /* brighter glass on iPhone */
+  background: rgba(255, 255, 255, 0.15); /* brighter glass on iPhone */
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, background 0.3s ease;
@@ -193,4 +193,5 @@
     padding: 2px 4px;
   }
 }
+
 
