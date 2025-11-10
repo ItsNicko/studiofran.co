@@ -13,8 +13,10 @@ This is my personal portfolio site, a place to share my builds, experiments, and
 - My setup, tools, and philosophy
 
 ### ToDo
+- Learn.md
+- Documentation
 - Projects
-- Blogs
+- ~~Blogs~~
 - ~~Optimize for iPhone~~
 
 ### My Philosophy
