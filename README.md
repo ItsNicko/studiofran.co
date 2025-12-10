@@ -1,12 +1,13 @@
 # studiofran.co
 
-This is my personal portfolio site, a place to share my builds, experiments, and ideas.
+This is my personal portfolio site, a place where I share my builds, experiments, and ideas.
 
 ### Framework
 
-- HTML & CSS (no frameworks, just hand-coded)
+- HTML & CSS (no frameworks, just coded)
 - Hosted with Cloudflare Pages
 - Built in Visual Studio Code
+- Koho Mail (Free)
 
 ### Whats Inside
 
@@ -16,8 +17,8 @@ This is my personal portfolio site, a place to share my builds, experiments, and
 
 ### ToDo
 
-- Learn.md
-- Documentation
+- ~~Learn.md~~
+- ~~Documentation~~
 - Projects
 - ~~Blogs~~
 - ~~Optimize for iPhone~~
