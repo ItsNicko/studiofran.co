@@ -7,4 +7,4 @@ Disallow: /Blog-Drafts/
 Disallow: /private/
 
 # sitemap 
-# sitemap: https://yourdomain.com/sitemap.xml
+# sitemap: https://studiofran.co/sitemap.xml
