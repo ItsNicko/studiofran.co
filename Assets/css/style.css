@@ -289,6 +289,10 @@ footer {
   main {
     padding: 1rem;
   }
+
+  .chrome-utils {
+    display: none;
+  }
 }
 
 a {
