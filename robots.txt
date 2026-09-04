@@ -1,10 +1,14 @@
 User-agent: *
 Allow: /
-
-# unfinished areas
 Disallow: /admin/
 Disallow: /Blog-Drafts/
 Disallow: /private/
 
-# sitemap 
-# sitemap: https://studiofran.co/sitemap.xml
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://studiofran.co/sitemap.xml
+Crawl-delay: 1
