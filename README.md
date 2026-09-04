@@ -1,17 +1,18 @@
 # studiofran.co
 
-This is my personal portfolio site, a place where I share my builds, experiments, and ideas.
+This is my personal portfolio site, a place where I share my builds, thoughts, and ideas.
 
 ### Framework
 
 - HTML & CSS (no frameworks, just coded)
 - Hosted with Cloudflare Pages
 - Built in Visual Studio Code
-- Koho Mail (Free)
+- Cloudflare email routing
+- manifests for favicon
 
 ### Whats Inside
 
-- Projects I've worked on
+- ~~Projects I've worked on~~ (coming soon)
 - Blog posts and drafts
 - My setup, tools, and philosophy
 

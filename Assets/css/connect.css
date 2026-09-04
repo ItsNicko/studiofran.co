@@ -87,7 +87,9 @@
 }
 
 .showcase-container:hover .card.active:not(:hover) .title-collapsed,
-.showcase-container:focus-within .card.active:not(:focus-within) .title-collapsed {
+.showcase-container:focus-within
+  .card.active:not(:focus-within)
+  .title-collapsed {
   opacity: 1;
 }
 
@@ -209,7 +211,9 @@
   }
 
   .showcase-container:hover .card.active:not(:hover) .title-collapsed,
-  .showcase-container:focus-within .card.active:not(:focus-within) .title-collapsed {
+  .showcase-container:focus-within
+    .card.active:not(:focus-within)
+    .title-collapsed {
     opacity: 1;
   }
 
