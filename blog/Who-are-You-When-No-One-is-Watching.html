@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Nickolas Franco" />
-  <title>Who Are You When No One Is Watching | Studio Franco</title>
-  <meta name="description" content="On discipline, self-accountability, and the version of yourself you build when no one is watching." />
-  <link rel="canonical" href="https://studiofran.co/blog/Who-are-You-When-No-One-is-Watching" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../Assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../Assets/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Studio Franco blog  thoughts on building, learning, AI, circuit bending, and the mindset behind creating things that matter.">
+  <meta name="author" content="Nickolas Franco">
+  <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://studiofran.co/blog">
+  <title>Blog | Studio Franco</title>
+  <meta property="og:title" content="Blog | Studio Franco">
+  <meta property="og:description" content="Thoughts on building, learning, AI, circuit bending, and the mindset behind creating things that matter.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://studiofran.co/blog">
+  <meta property="og:image" content="https://studiofran.co/Assets/static.webp">
+  <meta property="og:site_name" content="Studio Franco">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog | Studio Franco">
+  <meta name="twitter:description" content="Thoughts on building, learning, AI, circuit bending, and the mindset behind creating things that matter.">
+  <meta name="twitter:image" content="https://studiofran.co/Assets/static.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "https://studiofran.co/blog#blog",
+        "name": "Studio Franco Blog",
+        "description": "Thoughts on building, learning, AI, circuit bending, and the mindset behind creating things that matter.",
+        "url": "https://studiofran.co/blog",
+        "publisher": {
+          "@id": "https://studiofran.co/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://studiofran.co/blog#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://studiofran.co/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://studiofran.co/blog"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/png" sizes="512x512" href="../Assets/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="../Assets/favicon/favicon.ico">
         <style>
 * {
   outline: none;
@@ -23,7 +69,7 @@
   --border-color: rgba(113 119 144 / 25%);
   --theme-color: #f9fafb;
   --inactive-color: rgba(222, 222, 222, 0.78);
-  --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --body-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
   --hover-menu-bg: rgba(12 15 25 / 30%);
   --content-title-color: #999ba5;
   --content-bg: rgb(146 151 179 / 13%);
@@ -69,6 +115,7 @@ body {
     BlinkMacSystemFont,
     "SF Pro Text",
     "SF Pro Display",
+    "Helvetica Neue",
     "Segoe UI",
     Roboto,
     sans-serif;
@@ -121,7 +168,7 @@ img {
 }
 
 main {
-  color: white;
+  color: rgba(255, 255, 255, 0.92);
   padding: 0;
 }
 
@@ -132,9 +179,10 @@ main {
   display: flex;
   flex-direction: column;
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.3),
-    0 2px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 14px;
+    0 24px 80px rgba(0, 0, 0, 0.28),
+    0 2px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
   transition: min-height 0.45s cubic-bezier(0.4, 0, 0.25, 1);
 }
@@ -148,10 +196,10 @@ main {
   align-items: center;
   height: 38px;
   padding: 0 16px;
-  background: rgba(28, 28, 30, 0.55);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(30, 30, 32, 0.45);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   flex-shrink: 0;
   user-select: none;
   -webkit-user-select: none;
@@ -159,9 +207,9 @@ main {
 
 .window-content {
   flex: 1;
-  background: rgba(28, 28, 30, 0.5);
-  backdrop-filter: blur(12px) saturate(150%);
-  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  background: rgba(22, 22, 24, 0.38);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
   overflow-y: auto;
   max-height: 3000px;
   padding: 2rem;
@@ -181,9 +229,10 @@ main {
 .chrome-nav a {
   padding: 6px 10px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-  border-radius: 6px;
-  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.72);
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
   transition:
     background 0.15s ease,
     color 0.15s ease;
@@ -191,7 +240,7 @@ main {
 
 .chrome-nav a:hover,
 .chrome-nav a.is-active {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.14);
   color: #fff;
 }
 
@@ -237,9 +286,9 @@ main {
   flex: 1;
   text-align: center;
   font-size: 0.85rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.82);
+  letter-spacing: 0.01em;
 }
 
 .chrome-spacer {
@@ -297,7 +346,8 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  color: white;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
@@ -313,32 +363,28 @@ footer {
 
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: inherit;
 }
 
 .link {
-  color: #fff;
+  color: #2997ff;
   text-decoration: none;
-  display: inline-block;
-  padding: 15px 0;
-  position: relative;
+  display: inline;
+  padding: 0;
+  position: static;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.link:hover {
+  color: #5ac8fa;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 .link:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 0;
-  position: absolute;
-  background: #fff;
-  transition: transform 0.3s ease;
-  transform: scaleX(0);
-  transform-origin: center;
-  width: 100%;
+  display: none;
 }
 .link:hover:after {
-  transform: scaleX(1);
+  transform: none;
 }
 
 .main-header .header-menu a {
@@ -361,8 +407,8 @@ a {
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.1;
 }
@@ -372,7 +418,7 @@ h2 {
   font-weight: 600;
   letter-spacing: -0.015em;
   line-height: 1.15;
-  color: white;
+  color: rgba(255, 255, 255, 0.96);
 }
 
 h3 {
@@ -380,7 +426,7 @@ h3 {
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 1.2;
-  color: white;
+  color: rgba(255, 255, 255, 0.96);
 }
 
 h4 {
@@ -404,8 +450,8 @@ h6 {
 
 p {
   font-size: 1.0625rem;
-  color: white;
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
   letter-spacing: -0.005em;
 }
 
@@ -452,7 +498,7 @@ p {
 }
 
 .window-minimize-checkbox:checked ~ .window-chrome .window-title::after {
-  content: " — Minimized";
+  content: "  Minimized";
 }
 
 * {
@@ -614,193 +660,231 @@ p {
   }
 }
 
-    </style>
-
-  <meta property="og:title" content="Who Are You When No One Is Watching | Studio Franco" />
-  <meta property="og:description" content="On discipline, self-accountability, and the version of yourself you build when no one is watching." />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://studiofran.co/blog/Who-are-You-When-No-One-is-Watching" />
-  <meta property="og:image" content="https://studiofran.co/Assets/static.webp" />
-  <meta property="og:site_name" content="Studio Franco" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Who Are You When No One Is Watching | Studio Franco" />
-  <meta name="twitter:description" content="On discipline, self-accountability, and the version of yourself you build when no one is watching." />
-  <meta name="twitter:image" content="https://studiofran.co/Assets/static.webp" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://studiofran.co/"},
-          {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://studiofran.co/blog.html"},
-          {"@type": "ListItem", "position": 3, "name": "Who Are You When No One Is Watching", "item": "https://studiofran.co/blog/Who-are-You-When-No-One-is-Watching"}
-        ]
-      },
-      {
-        "@type": "BlogPosting",
-        "headline": "Who Are You When No One Is Watching",
-        "description": "On discipline, self-accountability, and the version of yourself you build when no one is watching.",
-        "datePublished": "2024-06-24",
-        "author": {"@type": "Person", "name": "Nickolas Franco"},
-        "publisher": {"@type": "Organization", "name": "Studio Franco"},
-        "image": "https://studiofran.co/Assets/static.webp",
-        "mainEntityOfPage": "https://studiofran.co/blog/Who-are-You-When-No-One-is-Watching"
+      /* window state: windowed by default, #maximized fills the viewport */
+      body:target {
+        padding: 0;
       }
-    ]
-  }
-  </script>
+
+      body:target .app {
+        height: 100vh;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      body:target .app:has(.window-minimize-checkbox:checked) {
+        height: auto;
+        min-height: 0;
+      }
+
+      .dot.restore {
+        display: none;
+        background: #28c840;
+      }
+
+      .dot.restore:hover {
+        background: #1db954;
+      }
+
+      body:target .dot.maximize {
+        display: none;
+      }
+
+      body:target .dot.restore {
+        display: block;
+      }
+
+      .chrome-nav-max {
+        display: none;
+      }
+
+      body:target .chrome-nav:not(.chrome-nav-max) {
+        display: none;
+      }
+
+      body:target .chrome-nav-max {
+        display: flex;
+      }
+
+      .chrome-utils-max {
+        display: none;
+      }
+
+      body:target .chrome-utils:not(.chrome-utils-max) {
+        display: none;
+      }
+
+      body:target .chrome-utils-max {
+        display: flex;
+      }
+
+      @media screen and (max-width: 480px) {
+        body:target .chrome-utils-max {
+          display: none;
+        }
+      }
+
+/* window close -> dock */
+.window-close-checkbox { display: none; }
+.app-dock {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(140%) scale(0.7);
+  opacity: 0;
+  z-index: 9999;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+  pointer-events: none;
+}
+.app-dock label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(30,30,32,0.55);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  cursor: pointer;
+}
+.app-dock img { width: 48px; height: 48px; border-radius: 10px; }
+/* base app transition for close/open */
+.app {
+  transform-origin: center bottom;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+}
+.app:has(.window-close-checkbox:checked) {
+  transform: scale(0.2) translateY(60vh);
+  opacity: 0;
+  pointer-events: none;
+}
+body:has(.window-close-checkbox:checked) .app-dock {
+  transform: translateX(-50%) translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+</style>
 </head>
-<body translate="no">
+<body id="maximized" translate="no">
+  <div class="video-bg">
+    <video autoplay loop muted playsinline preload="none" poster="/Assets/static.webp">
+      <source src="/Assets/flow.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
   <div class="app">
     <input type="checkbox" id="window-minimize" class="window-minimize-checkbox" />
+    <input type="checkbox" id="window-close" class="window-close-checkbox" />
     <div class="window-chrome">
       <div class="traffic-lights">
-        <span class="dot close"></span>
+        <label for="window-close" class="dot close" aria-label="Close window"></label>
         <label for="window-minimize" class="dot minimize" aria-label="Minimize window"></label>
-        <span class="dot maximize"></span>
+        <a class="dot maximize" href="#maximized" aria-label="Maximize window" title="Maximize"></a>
+        <a class="dot restore" href="#" aria-label="Restore window" title="Restore"></a>
       </div>
       <span class="window-title">Studio Franco</span>
       <div class="chrome-spacer"></div>
       <nav class="chrome-nav">
-        <a href="../index.html">Home</a>
-        <a href="../about.html">About</a>
-        <a href="../portfolio.html">Portfolio</a>
-        <a href="../blog.html">Posts</a>
-        <a href="../connect.html">Connect</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a class="is-active" href="blog.html">Blog</a>
+        <a href="connect.html">Connect</a>
+      </nav>
+      <nav class="chrome-nav chrome-nav-max">
+        <a href="index.html#maximized">Home</a>
+        <a href="about.html#maximized">About</a>
+        <a href="portfolio.html#maximized">Portfolio</a>
+        <a class="is-active" href="blog.html#maximized">Blog</a>
+        <a href="connect.html#maximized">Connect</a>
       </nav>
       <div class="chrome-utils">
-        <a href="../connect.html" class="icon-btn" aria-label="Notifications">
-          <svg viewbox="0 0 24 24" fill="currentcolor" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bell">
-          <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"></path></svg>
-          <span class="notification-number">3</span>
+        <a href="connect.html" class="icon-btn" aria-label="Notifications">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+            <path d="M13.73 21a2 2 0 01-3.46 0"/>
+          </svg>
+          <span class="notification-number"></span>
         </a>
-        <a href="../blog.html" class="icon-btn" aria-label="Blog posts">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="paper" viewbox="0 0 20 20" width="22" height="22">
-          <path stroke="white" stroke-width="0.125" d="M0 3.125a1.876 1.876 0 0 1 1.875 -1.875h13.75a1.875 3.125 0 0 1 1.875 1.875v13.285c0 0.375 -0.063 0.818 -0.297 1.215h0.922a0.625 0.625 0 0 0 0.625 -0.625V5.75a0.625 0.625 0 0 1 1.25 0V17a1.876 1.876 0 0 1 -1.875 1.875H1.871a1.87 1.87 0 0 1 -1.871 -2zM15 17.5c0.463 0 0.818 -0.264 1.066 -0.551 0.115 -0.133 0.184 -0.349 0.184 -0.664V3.125a0.625 0.625 0 0 0 -0.625 -0.625H1.875a0.625 0.625 0 0 0 -0.625 0.625v13.75a0.622 0.622 0 0 0 0.621 0.625z"></path>
-          <path d="M2.5 3.75H15v2.5H2.5zm0 3.75h5v3.75h-5zm0 5h5v1.25h-5zm0 2.5h5v1.25h-5zm6.25 -7.5h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5zM8.75 10h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5zM8.75 12.5h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5zM8.75 15h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5z"></path></svg>
+        <a href="../Assets/resume-nickolas-franco-2026.pdf" class="icon-btn" aria-label="Resume" target="_blank"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></a>
+        <a href="about.html" class="icon-btn" aria-label="Profile">
+          <img class="profile-img" src="Assets/Profile_small.webp" alt="Nickolas Franco" />
         </a>
-        <a href="../about.html" class="icon-btn" aria-label="Profile">
-          <img class="profile-img" src="../Assets/Profile_small.webp" alt="Nickolas Franco" />
+      </div>
+<div class="chrome-utils chrome-utils-max">
+        <a href="connect.html#maximized" class="icon-btn" aria-label="Notifications">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+            <path d="M13.73 21a2 2 0 01-3.46 0"/>
+          </svg>
+          <span class="notification-number"></span>
+        </a>
+        <a href="../Assets/resume-nickolas-franco-2026.pdf" class="icon-btn" aria-label="Resume" target="_blank"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></a>
+        <a href="about.html#maximized" class="icon-btn" aria-label="Profile">
+          <img class="profile-img" src="Assets/Profile_small.webp" alt="Nickolas Franco" />
         </a>
       </div>
     </div>
     <div class="window-content">
-      <main>
-        <h1>Who Are You When No One Is Watching</h1>
-        <p>June 24, 2024</p>
-
-        <p>Most days start the same.<br>
-        Eyes open. Head heavy. A quick glance at the phone.<br>
-        And then it hits:<br>
-        <strong>That moment.</strong><br>
-        The fork in the road.</p>
-
-        <p>Am I going to waste today?<br>
-        Or will I actually become the person I keep saying I want to be?</p>
-
-        <p>That's the fight.<br>
-        Not against the world, but against me.<br>
-        The lazy, comfortable, procrastinating version of me.<br>
-        The one who says, "you've done enough,"" when I know I haven't.</p>
-
-        <h2>The Fear That Follows Me</h2>
-        <p>I'm scared of becoming the kind of person who only moves when someone's watching.</p>
-
-        <p>The type who performs well when it's convenient.<br>
-        Who talks big and executes <i>small</i>.<br>
-        Who's surrounded by potential, but sits in the middle of it; wasting it.</p>
-
-        <p>I used to be closer to that version of myself than I want to admit.</p>
-
-        <p>Freshman and sophomore year?<br>
-        I was average.<br>
-        My grades, my effort, my mentality, all of it.<br>
-        I did what was required. Nothing more.<br>
-        I wasn't failing, but I definitely wasn't rising.</p>
-
-        <p>And deep down, I knew it.<br>
-        Knew I wasn't trying. Knew I was making excuses.<br>
-        But I stayed there.<br>
-        Because average feels safe.<br>
-        <p>Until it doesn't.</p>
-
-        <h2>The Conversations That Changed Me</h2>
-        <p>I didn't get out of that mindset alone.</p>
-
-        <p>Talking with people around me convinced me.<br>
-        They didn't say anything complicated.<br>
-        They silently worked while I laid back.</p>
-
-        <p>Looking at people with a differnt mindset changed the way I looked at things<br>
-        "If they can work this hard why cant I?"<br>
-        "Im not going anywhere if I continue being lazy"</p>
-
-        <p>They weren't trying to motivate me.<br>
-        They were just living different. and I felt it.</p>
-
-        <p>Ambition doesn't scream. It shows.<br>
-        And when I saw it in them, I realized how far I was from mine.</p>
-
-        <p>That was the wake-up call.</p>
-
-        <h2>Today Is the Test</h2>
-        <p>So now, every day I wake up with the same question:</p>
-
-        <p>"Who are you when no one is watching?"</p>
-
-        <p>Because that's the real test.<br>
-        Not the exam. Not the deadline. Not the audience.<br>
-        But the quiet morning. The open laptop. The decision to do the hard thing when you could do nothing.</p>
-
-        <p>That's the version of me I'm building now.<br>
-        The one who doesn't wait for pressure to perform.<br>
-        The one who treats silence like a spotlight.</p>
-
-        <h2>The People I Choose</h2>
-        I'm careful<i>ish</i> with who I surround myself with now.</p>
-
-        <p>Not because I think I'm better than anyone, but because I know how easy it is to fall back.<br>
-        People without ambition will drag you down.</p>
-
-        <p>Not always on purpose.<br>But their mindset becomes your ceiling.<br>
-        And I've already lived too long under low ceilings.</p>
-
-        <p>I want to be around people who talk about ideas, not gossip.
-        <br>People who set goals, not just complain.<br>People who don't just dream, but move.</p>
-
-        <p>Because when I'm around that energy, I rise.<br>
-        I stretch.<br>
-        I remember who I'm trying to become.</p>
-
-        <h2>In the End</h2>
-        <p>This isn't about perfection.<br>
-        It's not about grinding 24/7 or never messing up.</p>
-
-        <p>It's about <strong>showing up</strong>, especially when no one's clapping.<br>
-        Choosing progress when procrastination feels easier.<br>
-        Doing the work that no one will see, because you'll know if you didn't.</p>
-
-        <p>So yeah.<br>
-        Some days I still slip.<br>
-        But not as often.<br>
-        And never for long.</p>
-
-        <p>Because every morning is another chance to answer the same question:</p>
-
-        <p>Who are you when no one is watching?</p>
-
-        <p>And now I like my answer.</p>
-      </main>
+      <a class="main-post" href="blog/This-Ain't-a-Template.html">
+      <div class="featured-post">
+        <h2>This Ain't a Template.</h2>
+        <p>Why my site isnt made in Tailwind</p>
+      </div></a>
+      <a href="blog/I-Dont-Want-to-Die-Average.html"><div class="post-grid">
+        <div class="card-wrapper" tabindex="0">
+          <div class="post-card">
+            <h3>I Don't Want to Die Average.</h3>
+            <p>What's the point of all this if I'm just aiming for average? I'd rather learn hard, build with intent, and leave work that means something. That mindset drives everything.</p>
+          </div>
+        </div></a>
+        <a href="blog/Who-are-You-When-No-One-is-Watching.html"><div class="card-wrapper" tabindex="0">
+          <div class="post-card">
+            <h3>Who Are You When No One Is Watching?</h3>
+            <p>When no one's watching? That's the version that matters. The one that works in silence, learns without praise, and keeps going when no one's looking.</p>
+          </div>
+        </div></a>
+        <a href="blog/Why-I-Dont-Learn-Like-School-Taught-Me.html"><div class="card-wrapper" tabindex="0">
+          <div class="post-card">
+            <h3>Why I Don't Learn Like School Taught Me</h3>
+            <p>I don't learn like school taught me. I learn by building, breaking, and figuring it out. Thats what actually sticks.</p>
+          </div>
+        </div></a>
+        <a href="blog/My-EDC-Setup-Breakdown.html"><div class="card-wrapper" tabindex="0">
+          <div class="post-card">
+            <h3>My EDC and Setup Breakdown</h3>
+            <p>What I actually use and how it helps me learn.</p>
+          </div>
+        </div></a>
+        <a href="blog/behind-but-not-outpaced.html"><div class="card-wrapper" tabindex="0">
+          <div class="post-card">
+            <h3>Behind, but Not Outpaced</h3>
+            <p>If I dont get into MIT, it'll feel like watching the best version of me walk away. But I'll survive. I always do, even when I shouldn't have to.</p>
+          </div>
+        </div></a>
+      </div>
       <footer>
-        <p>© 2025 Nicko | Built with raw HTML + CSS.</p>
+        <p>© 2026 Nicko | Built with raw HTML + CSS.</p>
       </footer>
     </div>
   </div>
+      <div class="app-dock" aria-hidden="false">
+      <label for="window-close" aria-label="Restore window">
+        <img src="../Assets/favicon/android-chrome-512x512.png" alt="Open app" />
+      </label>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+
 
 

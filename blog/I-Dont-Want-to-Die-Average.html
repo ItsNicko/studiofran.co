@@ -1,906 +1,891 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Nickolas Franco" />
-    <title>I Don't Want to Die Average | Studio Franco</title>
-    <meta
-      name="description"
-      content="On being a jack of all trades, embracing versatility, and refusing to settle for average."
-    />
-    <link
-      rel="canonical"
-      href="https://studiofran.co/blog/I-Dont-Want-to-Die-Average"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../Assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../Assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../Assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../Assets/site.webmanifest" />
-    <style>
-      * {
-        outline: none;
-        box-sizing: border-box;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Studio Franco blog  thoughts on building, learning, AI, circuit bending, and the mindset behind creating things that matter.">
+  <meta name="author" content="Nickolas Franco">
+  <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://studiofran.co/blog">
+  <title>Blog | Studio Franco</title>
+  <meta property="og:title" content="Blog | Studio Franco">
+  <meta property="og:description" content="Thoughts on building, learning, AI, circuit bending, and the mindset behind creating things that matter.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://studiofran.co/blog">
+  <meta property="og:image" content="https://studiofran.co/Assets/static.webp">
+  <meta property="og:site_name" content="Studio Franco">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog | Studio Franco">
+  <meta name="twitter:description" content="Thoughts on building, learning, AI, circuit bending, and the mindset behind creating things that matter.">
+  <meta name="twitter:image" content="https://studiofran.co/Assets/static.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "https://studiofran.co/blog#blog",
+        "name": "Studio Franco Blog",
+        "description": "Thoughts on building, learning, AI, circuit bending, and the mindset behind creating things that matter.",
+        "url": "https://studiofran.co/blog",
+        "publisher": {
+          "@id": "https://studiofran.co/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://studiofran.co/blog#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://studiofran.co/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://studiofran.co/blog"
+          }
+        ]
       }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/png" sizes="512x512" href="../Assets/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="../Assets/favicon/favicon.ico">
+        <style>
+* {
+  outline: none;
+  box-sizing: border-box;
+}
 
-      :root {
-        --theme-bg-color: rgba(16 18 27 / 40%);
-        --border-color: rgba(113 119 144 / 25%);
-        --theme-color: #f9fafb;
-        --inactive-color: rgba(222, 222, 222, 0.78);
-        --body-font:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        --hover-menu-bg: rgba(12 15 25 / 30%);
-        --content-title-color: #999ba5;
-        --content-bg: rgb(146 151 179 / 13%);
-        --overlay-bg: rgba(36, 39, 59, 0.3);
-        --scrollbar-bg: rgb(1 2 3 / 40%);
-      }
+:root {
+  --theme-bg-color: rgba(16 18 27 / 40%);
+  --border-color: rgba(113 119 144 / 25%);
+  --theme-color: #f9fafb;
+  --inactive-color: rgba(222, 222, 222, 0.78);
+  --body-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+  --hover-menu-bg: rgba(12 15 25 / 30%);
+  --content-title-color: #999ba5;
+  --content-bg: rgb(146 151 179 / 13%);
+  --overlay-bg: rgba(36, 39, 59, 0.3);
+  --scrollbar-bg: rgb(1 2 3 / 40%);
+}
 
-      html {
-        box-sizing: border-box;
-        -webkit-font-smoothing: antialiased;
-      }
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
 
-      [data-title]:hover:after {
-        opacity: 1;
-        transition: all 0.1s ease 0.5s;
-        visibility: visible;
-      }
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
 
-      [data-title]:after {
-        content: attr(data-title);
-        position: absolute;
-        bottom: -1.6em;
-        padding: 4px 4px 4px 8px;
-        color: #ffffff;
-        margin-left: -20vh;
-        white-space: nowrap;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-        background-color: rgb(201 203 216 / 14%);
-        opacity: 0;
-        z-index: 99999;
-        visibility: hidden;
-      }
+[data-title]:after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -1.6em;
+  padding: 4px 4px 4px 8px;
+  color: #ffffff;
+  margin-left: -20vh;
+  white-space: nowrap;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgb(201 203 216 / 14%);
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+}
 
-      [data-title] {
-        position: relative;
-      }
+[data-title] {
+  position: relative;
+}
 
-      body {
-        font-family:
-          -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
-          "Segoe UI", Roboto, sans-serif;
-        background-image: url("/Assets/static.webp");
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2em;
-        width: 100%;
-        min-height: 100%;
-        margin: 0;
-      }
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Text",
+    "SF Pro Display",
+    "Helvetica Neue",
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background-image: url("/Assets/static.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
 
-      @media screen and (max-width: 480px) {
-        body {
-          padding: 0.8em;
-        }
-      }
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0.8em;
+  }
+}
 
-      .video-bg {
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-      }
+.video-bg {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
 
-      .video-bg video {
-        width: 100%;
-        height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
-      }
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
 
-      img {
-        max-width: 100%;
-      }
+img {
+  max-width: 100%;
+}
 
-      .personal-header {
-        text-align: center;
-        color: rgb(255, 255, 255);
-      }
+.personal-header {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
 
-      .personal-header a {
-        text-align: center;
-        color: rgb(255, 203, 203);
-      }
+.personal-header a {
+  text-align: center;
+  color: rgb(255, 203, 203);
+}
 
-      main {
-        color: white;
+main {
+  color: rgba(255, 255, 255, 0.92);
+  padding: 0;
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.28),
+    0 2px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  transition: min-height 0.45s cubic-bezier(0.4, 0, 0.25, 1);
+}
+
+.app:has(.window-minimize-checkbox:checked) {
+  min-height: 0;
+}
+
+.window-chrome {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  padding: 0 16px;
+  background: rgba(30, 30, 32, 0.45);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.window-content {
+  flex: 1;
+  background: rgba(22, 22, 24, 0.38);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  overflow-y: auto;
+  max-height: 3000px;
+  padding: 2rem;
+  transition:
+    max-height 0.45s cubic-bezier(0.4, 0, 0.25, 1),
+    padding 0.45s cubic-bezier(0.4, 0, 0.25, 1),
+    opacity 0.25s ease;
+}
+
+.chrome-nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.chrome-nav a {
+  padding: 6px 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.72);
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.chrome-nav a:hover,
+.chrome-nav a.is-active {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+
+.traffic-lights {
+  display: flex;
+  gap: 8px;
+  margin-right: 12px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.dot.close {
+  background: #ff5f57;
+}
+.dot.minimize {
+  background: #ffbd2e;
+}
+.dot.maximize {
+  background: #28c840;
+}
+
+.dot:hover {
+  transform: scale(1.15);
+}
+
+.dot.close:hover {
+  background: #ff3b30;
+}
+.dot.minimize:hover {
+  background: #f5a623;
+}
+.dot.maximize:hover {
+  background: #1db954;
+}
+
+.window-title {
+  flex: 1;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.82);
+  letter-spacing: 0.01em;
+}
+
+.chrome-spacer {
+  flex: 1;
+}
+
+.chrome-utils {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.7);
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+  text-decoration: none;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.chrome-utils .profile-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  margin-left: 4px;
+  transition:
+    transform 0.2s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.chrome-utils .profile-img:hover {
+  transform: scale(1.1);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 0 8px rgba(255, 255, 255, 0.15);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    padding: 1rem;
+  }
+
+  .chrome-utils {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link {
+  color: #2997ff;
+  text-decoration: none;
+  display: inline;
+  padding: 0;
+  position: static;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.link:hover {
+  color: #5ac8fa;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.link:after {
+  display: none;
+}
+.link:hover:after {
+  transform: none;
+}
+
+.main-header .header-menu a {
+  padding: 20px 24px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-bg);
+    border-radius: 10px;
+  }
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+h4 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  line-height: 1.25;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 1.0625rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
+  letter-spacing: -0.005em;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  main {
+    padding: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .window-chrome {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(28, 28, 30, 0.95);
+  }
+  .window-content {
+    background: rgba(28, 28, 30, 0.98);
+  }
+}
+
+.window-minimize-checkbox {
+  display: none;
+}
+
+.window-minimize-checkbox:checked ~ .window-content {
+  max-height: 0;
+  padding: 0 2rem;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.window-minimize-checkbox:checked ~ .window-chrome .window-title::after {
+  content: "  Minimized";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.featured-post {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  margin-top: 32px;
+  transition:
+    transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    background 0.3s ease;
+  width: 100%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.featured-post:hover,
+.featured-post:focus-within {
+  transform: translateY(-4px);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.16),
+    0 8px 24px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.featured-post h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.featured-post p {
+  font-size: 1.125rem;
+  opacity: 0.7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.card-wrapper {
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+
+.card-wrapper:focus {
+  outline: none;
+}
+
+.post-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition:
+    transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    background 0.3s ease;
+  padding: 20px;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.post-card:hover,
+.post-card:focus-within {
+  transform: translateY(-3px);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.post-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.post-card p {
+  font-size: 1rem;
+  opacity: 0.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+}
+
+@media screen and (max-width: 768px) {
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-card {
+    min-height: 160px;
+  }
+
+  .featured-post {
+    min-height: 220px;
+  }
+
+  .featured-post h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .post-card {
+    min-height: 140px;
+    padding: 16px;
+  }
+
+  .post-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .featured-post {
+    min-height: 180px;
+    padding: 16px;
+  }
+
+  .featured-post h2 {
+    font-size: 1.75rem;
+  }
+}
+
+      /* window state: windowed by default, #maximized fills the viewport */
+      body:target {
         padding: 0;
       }
 
-      .app {
-        position: relative;
-        width: 100%;
+      body:target .app {
+        height: 100vh;
         min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        box-shadow:
-          0 8px 32px rgba(0, 0, 0, 0.3),
-          0 2px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 14px;
-        overflow: hidden;
-        transition: min-height 0.45s cubic-bezier(0.4, 0, 0.25, 1);
+        border-radius: 0;
+        box-shadow: none;
       }
 
-      .app:has(.window-minimize-checkbox:checked) {
+      body:target .app:has(.window-minimize-checkbox:checked) {
+        height: auto;
         min-height: 0;
       }
 
-      .window-chrome {
-        display: flex;
-        align-items: center;
-        height: 38px;
-        padding: 0 16px;
-        background: rgba(28, 28, 30, 0.55);
-        backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        flex-shrink: 0;
-        user-select: none;
-        -webkit-user-select: none;
-      }
-
-      .window-content {
-        flex: 1;
-        background: rgba(28, 28, 30, 0.5);
-        backdrop-filter: blur(12px) saturate(150%);
-        -webkit-backdrop-filter: blur(12px) saturate(150%);
-        overflow-y: auto;
-        max-height: 3000px;
-        padding: 2rem;
-        transition:
-          max-height 0.45s cubic-bezier(0.4, 0, 0.25, 1),
-          padding 0.45s cubic-bezier(0.4, 0, 0.25, 1),
-          opacity 0.25s ease;
-      }
-
-      .chrome-nav {
-        display: flex;
-        align-items: center;
-        gap: 2px;
-        flex-shrink: 0;
-      }
-
-      .chrome-nav a {
-        padding: 6px 10px;
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.6);
-        border-radius: 6px;
-        font-size: 0.8rem;
-        transition:
-          background 0.15s ease,
-          color 0.15s ease;
-      }
-
-      .chrome-nav a:hover,
-      .chrome-nav a.is-active {
-        background: rgba(255, 255, 255, 0.1);
-        color: #fff;
-      }
-
-      .traffic-lights {
-        display: flex;
-        gap: 8px;
-        margin-right: 12px;
-      }
-
-      .dot {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: transform 0.15s ease;
-      }
-
-      .dot.close {
-        background: #ff5f57;
-      }
-      .dot.minimize {
-        background: #ffbd2e;
-      }
-      .dot.maximize {
+      .dot.restore {
+        display: none;
         background: #28c840;
       }
 
-      .dot:hover {
-        transform: scale(1.15);
-      }
-
-      .dot.close:hover {
-        background: #ff3b30;
-      }
-      .dot.minimize:hover {
-        background: #f5a623;
-      }
-      .dot.maximize:hover {
+      .dot.restore:hover {
         background: #1db954;
       }
 
-      .window-title {
-        flex: 1;
-        text-align: center;
-        font-size: 0.85rem;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 0.7);
-        letter-spacing: 0.02em;
+      body:target .dot.maximize {
+        display: none;
       }
 
-      .chrome-spacer {
-        flex: 1;
+      body:target .dot.restore {
+        display: block;
       }
 
-      .chrome-utils {
+      .chrome-nav-max {
+        display: none;
+      }
+
+      body:target .chrome-nav:not(.chrome-nav-max) {
+        display: none;
+      }
+
+      body:target .chrome-nav-max {
         display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-left: auto;
       }
 
-      .icon-btn {
+      .chrome-utils-max {
+        display: none;
+      }
+
+      body:target .chrome-utils:not(.chrome-utils-max) {
+        display: none;
+      }
+
+      body:target .chrome-utils-max {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        color: rgba(255, 255, 255, 0.7);
-        transition:
-          background 0.15s ease,
-          color 0.15s ease;
-        text-decoration: none;
-      }
-
-      .icon-btn:hover {
-        background: rgba(255, 255, 255, 0.12);
-        color: #fff;
-      }
-
-      .chrome-utils .profile-img {
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid rgba(255, 255, 255, 0.25);
-        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
-        margin-left: 4px;
-        transition:
-          transform 0.2s cubic-bezier(0.25, 1, 0.5, 1),
-          box-shadow 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-      }
-
-      .chrome-utils .profile-img:hover {
-        transform: scale(1.1);
-        box-shadow:
-          0 0 0 1px rgba(255, 255, 255, 0.2),
-          0 0 8px rgba(255, 255, 255, 0.15);
-      }
-
-      footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        color: white;
-        font-weight: 400;
       }
 
       @media screen and (max-width: 480px) {
-        main {
-          padding: 1rem;
-        }
-
-        .chrome-utils {
+        body:target .chrome-utils-max {
           display: none;
         }
       }
 
-      a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-      }
+/* window close -> dock */
+.window-close-checkbox { display: none; }
+.app-dock {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(140%) scale(0.7);
+  opacity: 0;
+  z-index: 9999;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+  pointer-events: none;
+}
+.app-dock label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(30,30,32,0.55);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  cursor: pointer;
+}
+.app-dock img { width: 48px; height: 48px; border-radius: 10px; }
+/* base app transition for close/open */
+.app {
+  transform-origin: center bottom;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+}
+.app:has(.window-close-checkbox:checked) {
+  transform: scale(0.2) translateY(60vh);
+  opacity: 0;
+  pointer-events: none;
+}
+body:has(.window-close-checkbox:checked) .app-dock {
+  transform: translateX(-50%) translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
 
-      .link {
-        color: #fff;
-        text-decoration: none;
-        display: inline-block;
-        padding: 15px 0;
-        position: relative;
-      }
-      .link:after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 0;
-        position: absolute;
-        background: #fff;
-        transition: transform 0.3s ease;
-        transform: scaleX(0);
-        transform-origin: center;
-        width: 100%;
-      }
-      .link:hover:after {
-        transform: scaleX(1);
-      }
-
-      .main-header .header-menu a {
-        padding: 20px 24px;
-      }
-
-      ::-webkit-scrollbar {
-        width: 6px;
-        border-radius: 10px;
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-          min-height: 100%;
-        }
-        ::-webkit-scrollbar-thumb {
-          background: var(--scrollbar-bg);
-          border-radius: 10px;
-        }
-      }
-
-      h1 {
-        font-size: 3rem;
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        line-height: 1.1;
-      }
-
-      h2 {
-        font-size: 2.25rem;
-        font-weight: 600;
-        letter-spacing: -0.015em;
-        line-height: 1.15;
-        color: white;
-      }
-
-      h3 {
-        font-size: 1.75rem;
-        font-weight: 600;
-        letter-spacing: -0.01em;
-        line-height: 1.2;
-        color: white;
-      }
-
-      h4 {
-        font-size: 1.375rem;
-        font-weight: 600;
-        letter-spacing: -0.005em;
-        line-height: 1.25;
-      }
-
-      h5 {
-        font-size: 1.125rem;
-        font-weight: 600;
-        line-height: 1.3;
-      }
-
-      h6 {
-        font-size: 1rem;
-        font-weight: 600;
-        line-height: 1.4;
-      }
-
-      p {
-        font-size: 1.0625rem;
-        color: white;
-        line-height: 1.6;
-        letter-spacing: -0.005em;
-      }
-
-      @media (max-width: 480px) {
-        html {
-          font-size: 12px;
-        }
-        main {
-          padding: 1rem;
-        }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        *,
-        *::before,
-        *::after {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
-          scroll-behavior: auto !important;
-        }
-      }
-
-      @media (prefers-reduced-transparency: reduce) {
-        .window-chrome {
-          backdrop-filter: none;
-          -webkit-backdrop-filter: none;
-          background: rgba(28, 28, 30, 0.95);
-        }
-        .window-content {
-          background: rgba(28, 28, 30, 0.98);
-        }
-      }
-
-      .window-minimize-checkbox {
-        display: none;
-      }
-
-      .window-minimize-checkbox:checked ~ .window-content {
-        max-height: 0;
-        padding: 0 2rem;
-        opacity: 0;
-        overflow: hidden;
-      }
-
-      .window-minimize-checkbox:checked ~ .window-chrome .window-title::after {
-        content: " — Minimized";
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      .featured-post {
-        background: rgba(255, 255, 255, 0.08);
-        border-radius: 16px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 24px;
-        margin-top: 32px;
-        transition:
-          transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-          box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-          background 0.3s ease;
-        width: 100%;
-        min-height: 280px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        box-shadow:
-          0 1px 3px rgba(0, 0, 0, 0.12),
-          0 4px 12px rgba(0, 0, 0, 0.08);
-      }
-
-      .featured-post:hover,
-      .featured-post:focus-within {
-        transform: translateY(-4px);
-        box-shadow:
-          0 2px 8px rgba(0, 0, 0, 0.16),
-          0 8px 24px rgba(0, 0, 0, 0.12);
-        background: rgba(255, 255, 255, 0.12);
-      }
-
-      .featured-post h2 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        line-height: 1.1;
-      }
-
-      .featured-post p {
-        font-size: 1.125rem;
-        opacity: 0.7;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        line-clamp: 4;
-        -webkit-box-orient: vertical;
-        line-height: 1.6;
-        letter-spacing: -0.005em;
-      }
-
-      .post-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-        margin-top: 24px;
-      }
-
-      .card-wrapper {
-        width: 100%;
-        cursor: pointer;
-        outline: none;
-      }
-
-      .card-wrapper:focus {
-        outline: none;
-      }
-
-      .post-card {
-        background: rgba(255, 255, 255, 0.06);
-        border-radius: 16px;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        transition:
-          transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-          box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-          background 0.3s ease;
-        padding: 20px;
-        width: 100%;
-        min-height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        position: relative;
-        box-shadow:
-          0 1px 2px rgba(0, 0, 0, 0.08),
-          0 2px 8px rgba(0, 0, 0, 0.06);
-      }
-
-      .post-card:hover,
-      .post-card:focus-within {
-        transform: translateY(-3px);
-        box-shadow:
-          0 2px 4px rgba(0, 0, 0, 0.12),
-          0 8px 20px rgba(0, 0, 0, 0.1);
-        background: rgba(255, 255, 255, 0.1);
-      }
-
-      .post-card h3 {
-        font-size: 1.5rem;
-        margin-bottom: 8px;
-        font-weight: 600;
-        letter-spacing: -0.01em;
-        line-height: 1.2;
-      }
-
-      .post-card p {
-        font-size: 1rem;
-        opacity: 0.6;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        line-clamp: 3;
-        -webkit-box-orient: vertical;
-        line-height: 1.6;
-        letter-spacing: -0.005em;
-      }
-
-      @media screen and (max-width: 768px) {
-        .post-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .post-card {
-          min-height: 160px;
-        }
-
-        .featured-post {
-          min-height: 220px;
-        }
-
-        .featured-post h2 {
-          font-size: 2rem;
-        }
-      }
-
-      @media screen and (max-width: 480px) {
-        .post-card {
-          min-height: 140px;
-          padding: 16px;
-        }
-
-        .post-card h3 {
-          font-size: 1.25rem;
-        }
-
-        .featured-post {
-          min-height: 180px;
-          padding: 16px;
-        }
-
-        .featured-post h2 {
-          font-size: 1.75rem;
-        }
-      }
-    </style>
-
-    <meta
-      property="og:title"
-      content="I Don't Want to Die Average | Studio Franco"
-    />
-    <meta
-      property="og:description"
-      content="On being a jack of all trades, embracing versatility, and refusing to settle for average."
-    />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:url"
-      content="https://studiofran.co/blog/I-Dont-Want-to-Die-Average"
-    />
-    <meta
-      property="og:image"
-      content="https://studiofran.co/Assets/static.webp"
-    />
-    <meta property="og:site_name" content="Studio Franco" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="I Don't Want to Die Average | Studio Franco"
-    />
-    <meta
-      name="twitter:description"
-      content="On being a jack of all trades, embracing versatility, and refusing to settle for average."
-    />
-    <meta
-      name="twitter:image"
-      content="https://studiofran.co/Assets/static.webp"
-    />
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://studiofran.co/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://studiofran.co/blog.html"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "I Don't Want to Die Average",
-                "item": "https://studiofran.co/blog/I-Dont-Want-to-Die-Average"
-              }
-            ]
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": "I Don't Want to Die Average",
-            "description": "On being a jack of all trades, embracing versatility, and refusing to settle for average.",
-            "datePublished": "2024-06-22",
-            "author": { "@type": "Person", "name": "Nickolas Franco" },
-            "publisher": { "@type": "Organization", "name": "Studio Franco" },
-            "image": "https://studiofran.co/Assets/static.webp",
-            "mainEntityOfPage": "https://studiofran.co/blog/I-Dont-Want-to-Die-Average"
-          }
-        ]
-      }
-    </script>
-  </head>
-  <body translate="no">
-    <div class="app">
-      <input
-        type="checkbox"
-        id="window-minimize"
-        class="window-minimize-checkbox"
-      />
-      <div class="window-chrome">
-        <div class="traffic-lights">
-          <span class="dot close"></span>
-          <label
-            for="window-minimize"
-            class="dot minimize"
-            aria-label="Minimize window"
-          ></label>
-          <span class="dot maximize"></span>
-        </div>
-        <span class="window-title">Studio Franco</span>
-        <div class="chrome-spacer"></div>
-        <nav class="chrome-nav">
-          <a href="../index.html">Home</a>
-          <a href="../about.html">About</a>
-          <a href="../portfolio.html">Portfolio</a>
-          <a href="../blog.html">Posts</a>
-          <a href="../connect.html">Connect</a>
-        </nav>
-        <div class="chrome-utils">
-          <a href="../connect.html" class="icon-btn" aria-label="Notifications">
-            <svg
-              viewbox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              width="20"
-              height="20"
-            >
-              <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" />
-              <path d="M13.73 21a2 2 0 01-3.46 0" />
-            </svg>
-            <span class="notification-number">3</span>
-          </a>
-          <a href="../blog.html" class="icon-btn" aria-label="Blog posts">
-            <svg
-              viewbox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              width="20"
-              height="20"
-            >
-              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="16" y1="13" x2="8" y2="13" />
-              <line x1="16" y1="17" x2="8" y2="17" />
-              <polyline points="10 9 9 9 8 9" />
-            </svg>
-          </a>
-          <a href="../about.html" class="icon-btn" aria-label="Profile">
-            <img
-              class="profile-img"
-              src="../Assets/profile_small.webp"
-              alt="Nickolas Franco"
-            />
-          </a>
-        </div>
+</style>
+</head>
+<body id="maximized" translate="no">
+  <div class="video-bg">
+    <video autoplay loop muted playsinline preload="none" poster="/Assets/static.webp">
+      <source src="/Assets/flow.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="app">
+    <input type="checkbox" id="window-minimize" class="window-minimize-checkbox" />
+    <input type="checkbox" id="window-close" class="window-close-checkbox" />
+    <div class="window-chrome">
+      <div class="traffic-lights">
+        <label for="window-close" class="dot close" aria-label="Close window"></label>
+        <label for="window-minimize" class="dot minimize" aria-label="Minimize window"></label>
+        <a class="dot maximize" href="#maximized" aria-label="Maximize window" title="Maximize"></a>
+        <a class="dot restore" href="#" aria-label="Restore window" title="Restore"></a>
       </div>
-      <div class="window-content">
-        <main>
-          <h1>I Don't Want to Die Average</h1>
-          <p>June 22, 2024</p>
-
-          <p>There's a quote that floats around alot:</p>
-
-          <p>"A jack of all trades is a master of none."</p>
-
-          <p>
-            People say it as a warning<br />
-            Pick a lane. Stay in it. Don't spread yourself thin.
-          </p>
-
-          <p>But people forget the second half of that quote:</p>
-
-          <p>"...but often times better than a master of one."</p>
-
-          <p>
-            It hits differently once you understand what it really means.<br />
-            It's not about being unfocused. It's about becoming versatile.<br />
-            It's about turning curiosity into capability.
-          </p>
-
-          <h2>My Strive to Learn</h2>
-
-          <p>I don't want to just be "good enough" at one thing.</p>
-
-          <p>
-            I don't want to just know how the front end works.<br />
-            I want to understand the backend too.<br />
-            I want to design, write, ship, and even fail but on my own terms, in
-            my own hands.
-          </p>
-
-          <p>
-            Not because I want a fancy resume.<br />
-            But because I want range.
-          </p>
-
-          <p>
-            Because when you know more, you can do more.<br />
-            You make connections others miss.<br />
-            You become the kind of person who luck sticks to not because you're
-            lucky,<br />
-            but because you've built so many surfaces for it to land on.
-          </p>
-
-          <h2>Against the Grain</h2>
-
-          <p>
-            Most advice tells you to specialize. To settle down. To brand
-            yourself tightly.
-          </p>
-
-          <p>
-            And sure mastery matters.<br />
-            But I don't think mastery has to mean being compleatly
-            one-dimensional.
-          </p>
-
-          <p>
-            I'd rather be the kind of person who learns relentlessly.<br />
-            Who asks "why?" when something works.<br />
-            Who builds a portfolio, a server, a business, a system, and then
-            rebuilds it better.
-          </p>
-
-          <p>
-            The goal isn't to be everywhere.<br />
-            The goal is to be capable anywhere.
-          </p>
-
-          <h2>This Is Just the Start</h2>
-
-          <p>
-            Learning everything is impossible.<br />
-            But trying to? That's where value is.
-          </p>
-
-          <p>
-            It forces you to think.<br />
-            It pushes you to adapt.<br />
-            And it puts you in rooms you otherwise don't belong in until you
-            <strong>do</strong>.
-          </p>
-
-          <p>
-            And when opportunity shows up disguised as a new language, a new
-            tool, or a challenge no one wants to touch you will not be seccond
-            guessing.
-          </p>
-
-          <p>You'll be ready.</p>
-
-          <h2>In Conclusion</h2>
-
-          <p>
-            I don't want to be the best at one thing.<br />
-            I want to be dangerous at everything.
-          </p>
-
-          <p>
-            Not because I crave attention.<br />
-            But because I refuse to live a life where my potential is capped by
-            what I never tried to learn.
-          </p>
-
-          <p>
-            It's not about being mediocre at everything.<br />
-            It's about being adaptable.<br />
-            Being resourceful.<br />
-            Being the one who can step into any situation and figure it out.
-          </p>
-
-          <p>
-            I'm not here to die average.<br />
-            I'm here to keep learning, keep building, and stack so many skills
-            that luck has no choice but to find me.
-          </p>
-        </main>
-
-        <footer>
-          <p>© 2025 Nicko | Built with raw HTML + CSS.</p>
-        </footer>
+      <span class="window-title">Studio Franco</span>
+      <div class="chrome-spacer"></div>
+      <nav class="chrome-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a class="is-active" href="blog.html">Blog</a>
+        <a href="connect.html">Connect</a>
+      </nav>
+      <nav class="chrome-nav chrome-nav-max">
+        <a href="index.html#maximized">Home</a>
+        <a href="about.html#maximized">About</a>
+        <a href="portfolio.html#maximized">Portfolio</a>
+        <a class="is-active" href="blog.html#maximized">Blog</a>
+        <a href="connect.html#maximized">Connect</a>
+      </nav>
+      <div class="chrome-utils">
+        <a href="connect.html" class="icon-btn" aria-label="Notifications">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+            <path d="M13.73 21a2 2 0 01-3.46 0"/>
+          </svg>
+          <span class="notification-number"></span>
+        </a>
+        <a href="../Assets/resume-nickolas-franco-2026.pdf" class="icon-btn" aria-label="Resume" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="white" class="paper" viewbox="0 0 20 20" width="22" height="22"><path stroke="white" stroke-width="0.125" d="M0 3.125a1.876 1.876 0 0 1 1.875 -1.875h13.75a1.875 3.125 0 0 1 1.875 1.875v13.285c0 0.375 -0.063 0.818 -0.297 1.215h0.922a0.625 0.625 0 0 0 0.625 -0.625V5.75a0.625 0.625 0 0 1 1.25 0V17a1.876 1.876 0 0 1 -1.875 1.875H1.871a1.87 1.87 0 0 1 -1.871 -2zM15 17.5c0.463 0 0.818 -0.264 1.066 -0.551 0.115 -0.133 0.184 -0.349 0.184 -0.664V3.125a0.625 0.625 0 0 0 -0.625 -0.625H1.875a0.625 0.625 0 0 0 -0.625 0.625v13.75a0.622 0.622 0 0 0 0.621 0.625z"></path><path d="M2.5 3.75H15v2.5H2.5zm0 3.75h5v3.75h-5zm0 5h5v1.25h-5zm0 2.5h5v1.25h-5zm6.25 -7.5h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5zM8.75 10h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5zM8.75 12.5h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5zM8.75 15h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5z"></path></svg></a>
+        <a href="about.html" class="icon-btn" aria-label="Profile">
+          <img class="profile-img" src="Assets/Profile_small.webp" alt="Nickolas Franco" />
+        </a>
+      </div>
+<div class="chrome-utils chrome-utils-max">
+        <a href="connect.html#maximized" class="icon-btn" aria-label="Notifications">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+            <path d="M13.73 21a2 2 0 01-3.46 0"/>
+          </svg>
+          <span class="notification-number"></span>
+        </a>
+        <a href="../Assets/resume-nickolas-franco-2026.pdf" class="icon-btn" aria-label="Resume" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="white" class="paper" viewbox="0 0 20 20" width="22" height="22"><path stroke="white" stroke-width="0.125" d="M0 3.125a1.876 1.876 0 0 1 1.875 -1.875h13.75a1.875 3.125 0 0 1 1.875 1.875v13.285c0 0.375 -0.063 0.818 -0.297 1.215h0.922a0.625 0.625 0 0 0 0.625 -0.625V5.75a0.625 0.625 0 0 1 1.25 0V17a1.876 1.876 0 0 1 -1.875 1.875H1.871a1.87 1.87 0 0 1 -1.871 -2zM15 17.5c0.463 0 0.818 -0.264 1.066 -0.551 0.115 -0.133 0.184 -0.349 0.184 -0.664V3.125a0.625 0.625 0 0 0 -0.625 -0.625H1.875a0.625 0.625 0 0 0 -0.625 0.625v13.75a0.622 0.622 0 0 0 0.621 0.625z"></path><path d="M2.5 3.75H15v2.5H2.5zm0 3.75h5v3.75h-5zm0 5h5v1.25h-5zm0 2.5h5v1.25h-5zm6.25 -7.5h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5zM8.75 10h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5zM8.75 12.5h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5zM8.75 15h2.5v1.25h-2.5zm3.75 0H15v1.25H12.5z"></path></svg></a>
+        <a href="about.html#maximized" class="icon-btn" aria-label="Profile">
+          <img class="profile-img" src="Assets/Profile_small.webp" alt="Nickolas Franco" />
+        </a>
       </div>
     </div>
-  </body>
+    <div class="window-content">
+      <a class="main-post" href="blog/This-Ain't-a-Template.html">
+      <div class="featured-post">
+        <h2>This Ain't a Template.</h2>
+        <p>Why my site isnt made in Tailwind</p>
+      </div></a>
+      <a href="blog/I-Dont-Want-to-Die-Average.html"><div class="post-grid">
+        <div class="card-wrapper" tabindex="0">
+          <div class="post-card">
+            <h3>I Don't Want to Die Average.</h3>
+            <p>What's the point of all this if I'm just aiming for average? I'd rather learn hard, build with intent, and leave work that means something. That mindset drives everything.</p>
+          </div>
+        </div></a>
+        <a href="blog/Who-are-You-When-No-One-is-Watching.html"><div class="card-wrapper" tabindex="0">
+          <div class="post-card">
+            <h3>Who Are You When No One Is Watching?</h3>
+            <p>When no one's watching? That's the version that matters. The one that works in silence, learns without praise, and keeps going when no one's looking.</p>
+          </div>
+        </div></a>
+        <a href="blog/Why-I-Dont-Learn-Like-School-Taught-Me.html"><div class="card-wrapper" tabindex="0">
+          <div class="post-card">
+            <h3>Why I Don't Learn Like School Taught Me</h3>
+            <p>I don't learn like school taught me. I learn by building, breaking, and figuring it out. Thats what actually sticks.</p>
+          </div>
+        </div></a>
+        <a href="blog/My-EDC-Setup-Breakdown.html"><div class="card-wrapper" tabindex="0">
+          <div class="post-card">
+            <h3>My EDC and Setup Breakdown</h3>
+            <p>What I actually use and how it helps me learn.</p>
+          </div>
+        </div></a>
+        <a href="blog/behind-but-not-outpaced.html"><div class="card-wrapper" tabindex="0">
+          <div class="post-card">
+            <h3>Behind, but Not Outpaced</h3>
+            <p>If I dont get into MIT, it'll feel like watching the best version of me walk away. But I'll survive. I always do, even when I shouldn't have to.</p>
+          </div>
+        </div></a>
+      </div>
+      <footer>
+        <p>© 2026 Nicko | Built with raw HTML + CSS.</p>
+      </footer>
+    </div>
+  </div>
+      <div class="app-dock" aria-hidden="false">
+      <label for="window-close" aria-label="Restore window">
+        <img src="../Assets/favicon/android-chrome-512x512.png" alt="Open app" />
+      </label>
+    </div>
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+

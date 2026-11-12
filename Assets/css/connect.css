@@ -1,13 +1,14 @@
 .showcase-container {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 16px;
   padding: 24px;
+  padding-left: max(24px, calc((100% - 832px) / 2));
   max-width: 100%;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
   z-index: 2;
   box-sizing: border-box;
@@ -18,16 +19,18 @@
   height: 480px;
   background: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition:
-    width 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-    height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-    box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-    background 0.3s ease;
+    width 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+    height 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+    background 0.35s ease,
+    transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  transition-delay: 0s;
   position: relative;
   overflow: hidden;
   scroll-snap-align: center;
@@ -38,59 +41,101 @@
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.08),
     0 2px 8px rgba(0, 0, 0, 0.06);
-  backdrop-filter: blur(12px) saturate(150%);
-  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  will-change: width, height, box-shadow, background, transform;
+  padding: 24px;
 }
 
-.card:focus {
-  outline: none;
+.card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -8px;
+  right: -8px;
 }
 
-.card.active,
+.pin-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Contact open by default when nothing hovered/pinned */
+.showcase-container:not(:has(.card:hover)):not(:has(.card:focus-within)):not(:has(.pin-toggle:checked)) .card:last-child {
+  width: 400px;
+  height: 480px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  transform: translateY(-3px);
+}
+
+/* Pinned (clicked) - stays open */
+.pin-toggle:checked + .card {
+  width: 400px;
+  height: 480px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 2;
+  transform: translateY(-3px);
+}
+
+/* Hover/focus - temporary open */
 .card:hover,
 .card:focus-within {
   width: 400px;
   height: 480px;
   box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.12),
-    0 8px 24px rgba(0, 0, 0, 0.1);
+    0 8px 20px rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  transform: translateY(-3px);
+  transition-delay: 0.15s;
 }
 
-.card.active .title-collapsed,
 .card:hover .title-collapsed,
 .card:focus-within .title-collapsed {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.25s ease 0.15s;
 }
 
-.card.active .content,
 .card:hover .content,
 .card:focus-within .content {
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease 0.2s;
 }
 
-.showcase-container:hover .card.active:not(:hover),
-.showcase-container:focus-within .card.active:not(:focus-within) {
+/* Close non-pinned, non-hovered cards when any card is hovered/pinned */
+.showcase-container:has(.card:hover) .card:not(:hover):not(:has(+ .pin-toggle:checked)),
+.showcase-container:has(.card:focus-within) .card:not(:focus-within):not(:has(+ .pin-toggle:checked)),
+.showcase-container:has(.pin-toggle:checked + .card) .card:not(:hover):not(:focus-within):not(:has(+ .pin-toggle:checked)) {
   width: 90px;
   height: 480px;
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.08),
     0 2px 8px rgba(0, 0, 0, 0.06);
   background: rgba(255, 255, 255, 0.06);
+  transform: translateY(0);
+  transition-delay: 0.15s;
 }
 
-.showcase-container:hover .card.active:not(:hover) .content,
-.showcase-container:focus-within .card.active:not(:focus-within) .content {
-  opacity: 0;
-}
-
-.showcase-container:hover .card.active:not(:hover) .title-collapsed,
-.showcase-container:focus-within
-  .card.active:not(:focus-within)
-  .title-collapsed {
+.showcase-container:has(.card:hover) .card:not(:hover):not(:has(+ .pin-toggle:checked)) .title-collapsed,
+.showcase-container:has(.card:focus-within) .card:not(:focus-within):not(:has(+ .pin-toggle:checked)) .title-collapsed,
+.showcase-container:has(.pin-toggle:checked + .card) .card:not(:hover):not(:focus-within):not(:has(+ .pin-toggle:checked)) .title-collapsed {
   opacity: 1;
+  transition: opacity 0.25s ease 0.15s;
+}
+
+.showcase-container:has(.card:hover) .card:not(:hover):not(:has(+ .pin-toggle:checked)) .content,
+.showcase-container:has(.card:focus-within) .card:not(:focus-within):not(:has(+ .pin-toggle:checked)) .content,
+.showcase-container:has(.pin-toggle:checked + .card) .card:not(:hover):not(:focus-within):not(:has(+ .pin-toggle:checked)) .content {
+  opacity: 0;
+  transition: opacity 0.2s ease 0.15s;
 }
 
 .title-collapsed {
@@ -102,6 +147,7 @@
   letter-spacing: 1px;
   opacity: 1;
   transition: opacity 0.3s ease;
+  transition-delay: 0s;
 }
 
 .content {
@@ -116,6 +162,7 @@
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  transition-delay: 0s;
   color: rgba(255, 255, 255, 0.9);
   padding: 24px;
   text-align: center;
@@ -169,7 +216,6 @@
 .preview-btn:hover::after {
   transform: translateX(3px);
 }
-
 @media (max-width: 768px) {
   .showcase-container {
     flex-direction: column;
@@ -188,33 +234,38 @@
     max-width: calc(100% - 20px);
     height: 56px;
     margin-bottom: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     transition:
-      height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+      height 0.35s cubic-bezier(0.25, 1, 0.5, 1),
       box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-      background 0.3s ease;
+      background 0.3s ease,
+      transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: height, box-shadow, background, transform;
   }
 
-  .card.active,
+  .showcase-container:not(:has(.card:hover)):not(:has(.card:focus-within)):not(:has(.pin-toggle:checked)) .card:last-child {
+    height: 260px;
+    transform: translateY(-3px);
+  }
+
+  .pin-toggle:checked + .card {
+    height: 260px;
+    width: 100%;
+    transform: translateY(-3px);
+  }
+
   .card:hover,
   .card:focus-within {
     height: 260px;
+    width: 100%;
+    transform: translateY(-3px);
   }
 
-  .showcase-container:hover .card.active:not(:hover),
-  .showcase-container:focus-within .card.active:not(:focus-within) {
+  .showcase-container:has(.card:hover) .card:not(:hover):not(:has(+ .pin-toggle:checked)),
+  .showcase-container:has(.card:focus-within) .card:not(:focus-within):not(:has(+ .pin-toggle:checked)),
+  .showcase-container:has(.pin-toggle:checked + .card) .card:not(:hover):not(:focus-within):not(:has(+ .pin-toggle:checked)) {
     height: 56px;
-  }
-
-  .showcase-container:hover .card.active:not(:hover) .content,
-  .showcase-container:focus-within .card.active:not(:focus-within) .content {
-    opacity: 0;
-  }
-
-  .showcase-container:hover .card.active:not(:hover) .title-collapsed,
-  .showcase-container:focus-within
-    .card.active:not(:focus-within)
-    .title-collapsed {
-    opacity: 1;
+    transform: translateY(0);
   }
 
   .title-collapsed {

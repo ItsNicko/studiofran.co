@@ -1,6 +1,6 @@
 # Studio Franco
 
-> Personal site of Nickolas Franco — an 18-year-old technologist from Minot, ND who builds AI tools, mods circuits, and documents the process.
+> Personal site of Nickolas Franco  an 18-year-old technologist from Minot, ND who builds AI tools, mods circuits, and documents the process.
 
 Studio Franco is the personal portfolio, blog, and lab notebook of Nickolas Franco ("Nicko"). It is hand-coded in raw HTML and CSS (no frameworks, no templates), hosted on Cloudflare Pages, and built to share projects, experiments, and the mindset behind creative engineering.
 
@@ -13,7 +13,7 @@ Studio Franco is the personal portfolio, blog, and lab notebook of Nickolas Fran
 
 ## About the author
 
-Nickolas Franco is a self-taught builder, engineer, and creator. He works across software, AI, and hardware — including ESP32 and Raspberry Pi projects, Flask-based tools, Docker containers, and circuit-bending experiments. He embraces being a generalist: a jack of all trades who refuses to die average.
+Nickolas Franco is a self-taught builder, engineer, and creator. He works across software, AI, and hardware  including ESP32 and Raspberry Pi projects, Flask-based tools, Docker containers, and circuit-bending experiments. He embraces being a generalist: a jack of all trades who refuses to die average.
 
 - Title: Technologist / Creative Builder
 - Known for: AI tools, hardware hacking, circuit bending, self-directed learning
@@ -31,12 +31,11 @@ Nickolas Franco is a self-taught builder, engineer, and creator. He works across
 
 ## Core pages
 
-- [Home](https://studiofran.co/): Studio Franco landing page — builder, engineer, creator.
-- [About](https://studiofran.co/about): Background on Nickolas Franco — technologist from Minot, ND; AI tools, circuit bending, self-taught engineer.
-- [Portfolio](https://studiofran.co/portfolio): Upcoming projects in AI, hardware hacking, and creative engineering.
+- [Home](https://studiofran.co/): Studio Franco landing page  builder, engineer, creator.
+- [About](https://studiofran.co/about): Background on Nickolas Franco  technologist from Minot, ND; AI tools, circuit bending, self-taught engineer.
+- [Portfolio](https://studiofran.co/portfolio): Projects in AI, hardware hacking, and creative engineering by Nickolas Franco.
 - [Connect](https://studiofran.co/connect): Email, social links, and contact details for collaborations or to say hello.
 - [Blog](https://studiofran.co/blog): Thoughts on building, learning, AI, circuit bending, and the mindset behind creating things that matter.
-- [In Progress (Current)](https://studiofran.co/current): What Nickolas is currently building, learning, and shipping — AI tools, hardware projects, and experiments in progress.
 - [Card](https://studiofran.co/card.html): Compact profile card with contact details and social links.
 
 ## Documentation
@@ -50,7 +49,7 @@ Nickolas Franco is a self-taught builder, engineer, and creator. He works across
 - [I Don't Want to Die Average](https://studiofran.co/blog/I-Dont-Want-to-Die-Average): On being a jack of all trades, embracing versatility, and refusing to settle for average.
 - [What I Actually Use Every Day (My EDC + Setup Breakdown)](https://studiofran.co/blog/My-EDC-Setup-Breakdown): A breakdown of the gear, tools, and setup an 18-year-old builder actually uses every day.
 - [Why I Don't Learn Like School Taught Me](https://studiofran.co/blog/Why-I-Dont-Learn-Like-School-Taught-Me): Why self-directed learning by building, breaking, and doing beats memorization and classrooms.
-- [New Website — This Ain't a Template](https://studiofran.co/blog/This-Ain't-a-Template): Why this site is built with raw HTML and CSS — no frameworks, no templates, no shortcuts.
+- [New Website  This Ain't a Template](https://studiofran.co/blog/This-Ain't-a-Template): Why this site is built with raw HTML and CSS  no frameworks, no templates, no shortcuts.
 - [Behind, but Not Outpaced](https://studiofran.co/blog/behind-but-not-outpaced): On feeling behind, chasing MIT, and refusing to stop building even when doubt creeps in.
 
 ## Philosophy

@@ -437,5 +437,50 @@ p {
 }
 
 .window-minimize-checkbox:checked ~ .window-chrome .window-title::after {
-  content: " — Minimized";
+  content: "  Minimized";
 }
+
+
+/* window close -> dock */
+.window-close-checkbox { display: none; }
+.app-dock {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(140%) scale(0.7);
+  opacity: 0;
+  z-index: 9999;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+  pointer-events: none;
+}
+.app-dock label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(30,30,32,0.55);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  cursor: pointer;
+}
+.app-dock img { width: 48px; height: 48px; border-radius: 10px; }
+/* base app transition for close/open */
+.app {
+  transform-origin: center bottom;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+}
+.app:has(.window-close-checkbox:checked) {
+  transform: scale(0.2) translateY(60vh);
+  opacity: 0;
+  pointer-events: none;
+}
+body:has(.window-close-checkbox:checked) .app-dock {
+  transform: translateX(-50%) translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+

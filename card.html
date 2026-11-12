@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Nickolas Franco — creative engineer and builder from Minot, ND. Profile card with contact details and social links."
+      content="Nickolas Franco  creative engineer and builder from Minot, ND. Profile card with contact details and social links."
     />
     <meta name="author" content="Nickolas Franco" />
     <meta name="robots" content="index, follow" />
@@ -60,24 +60,10 @@
         ]
       }
     </script>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="Assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="Assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="Assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="Assets/site.webmanifest" />
+  <link rel="icon" type="image/png" sizes="512x512" href="Assets/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="Assets/favicon/favicon.ico">
         <style>
 * {
   outline: none;
@@ -89,7 +75,7 @@
   --border-color: rgba(113 119 144 / 25%);
   --theme-color: #f9fafb;
   --inactive-color: rgba(222, 222, 222, 0.78);
-  --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --body-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
   --hover-menu-bg: rgba(12 15 25 / 30%);
   --content-title-color: #999ba5;
   --content-bg: rgb(146 151 179 / 13%);
@@ -135,6 +121,7 @@ body {
     BlinkMacSystemFont,
     "SF Pro Text",
     "SF Pro Display",
+    "Helvetica Neue",
     "Segoe UI",
     Roboto,
     sans-serif;
@@ -187,7 +174,7 @@ img {
 }
 
 main {
-  color: white;
+  color: rgba(255, 255, 255, 0.92);
   padding: 0;
 }
 
@@ -198,9 +185,10 @@ main {
   display: flex;
   flex-direction: column;
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.3),
-    0 2px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 14px;
+    0 24px 80px rgba(0, 0, 0, 0.28),
+    0 2px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
   transition: min-height 0.45s cubic-bezier(0.4, 0, 0.25, 1);
 }
@@ -214,10 +202,10 @@ main {
   align-items: center;
   height: 38px;
   padding: 0 16px;
-  background: rgba(28, 28, 30, 0.55);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(30, 30, 32, 0.45);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   flex-shrink: 0;
   user-select: none;
   -webkit-user-select: none;
@@ -225,9 +213,9 @@ main {
 
 .window-content {
   flex: 1;
-  background: rgba(28, 28, 30, 0.5);
-  backdrop-filter: blur(12px) saturate(150%);
-  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  background: rgba(22, 22, 24, 0.38);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
   overflow-y: auto;
   max-height: 3000px;
   padding: 2rem;
@@ -247,9 +235,10 @@ main {
 .chrome-nav a {
   padding: 6px 10px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-  border-radius: 6px;
-  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.72);
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
   transition:
     background 0.15s ease,
     color 0.15s ease;
@@ -257,7 +246,7 @@ main {
 
 .chrome-nav a:hover,
 .chrome-nav a.is-active {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.14);
   color: #fff;
 }
 
@@ -303,9 +292,9 @@ main {
   flex: 1;
   text-align: center;
   font-size: 0.85rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.82);
+  letter-spacing: 0.01em;
 }
 
 .chrome-spacer {
@@ -363,7 +352,8 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  color: white;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
@@ -379,32 +369,28 @@ footer {
 
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: inherit;
 }
 
 .link {
-  color: #fff;
+  color: #2997ff;
   text-decoration: none;
-  display: inline-block;
-  padding: 15px 0;
-  position: relative;
+  display: inline;
+  padding: 0;
+  position: static;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.link:hover {
+  color: #5ac8fa;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 .link:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 0;
-  position: absolute;
-  background: #fff;
-  transition: transform 0.3s ease;
-  transform: scaleX(0);
-  transform-origin: center;
-  width: 100%;
+  display: none;
 }
 .link:hover:after {
-  transform: scaleX(1);
+  transform: none;
 }
 
 .main-header .header-menu a {
@@ -427,8 +413,8 @@ a {
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.1;
 }
@@ -438,7 +424,7 @@ h2 {
   font-weight: 600;
   letter-spacing: -0.015em;
   line-height: 1.15;
-  color: white;
+  color: rgba(255, 255, 255, 0.96);
 }
 
 h3 {
@@ -446,7 +432,7 @@ h3 {
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 1.2;
-  color: white;
+  color: rgba(255, 255, 255, 0.96);
 }
 
 h4 {
@@ -470,8 +456,8 @@ h6 {
 
 p {
   font-size: 1.0625rem;
-  color: white;
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
   letter-spacing: -0.005em;
 }
 
@@ -518,7 +504,7 @@ p {
 }
 
 .window-minimize-checkbox:checked ~ .window-chrome .window-title::after {
-  content: " — Minimized";
+  content: "  Minimized";
 }
 
 * {
@@ -535,7 +521,7 @@ body {
   align-items: center;
   padding: 15px;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
 }
 
 .card-container {
@@ -850,7 +836,51 @@ body {
   }
 }
 
-    </style>
+    
+/* window close -> dock */
+.window-close-checkbox { display: none; }
+.app-dock {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(140%) scale(0.7);
+  opacity: 0;
+  z-index: 10000;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+  pointer-events: none;
+}
+.app-dock label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(30,30,32,0.55);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  cursor: pointer;
+}
+.app-dock img { width: 48px; height: 48px; border-radius: 10px; }
+/* base app transition for close/open */
+.app {
+  transform-origin: center bottom;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+}
+.app:has(.window-close-checkbox:checked) {
+  transform: scale(0.2) translateY(60vh);
+  opacity: 0;
+  pointer-events: none;
+}
+body:has(.window-close-checkbox:checked) .app-dock {
+  transform: translateX(-50%) translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+</style>
   </head>
   <body translate="no">
     <div class="video-bg">
@@ -993,5 +1023,12 @@ body {
         </div>
       </div>
     </main>
-  </body>
+    <div class="app-dock" aria-hidden="false">
+    <label for="window-close" aria-label="Restore window">
+      <img src="Assets/favicon/android-chrome-512x512.png" alt="Open app" />
+    </label>
+  </div>
+</body>
 </html>
+
+

@@ -77,6 +77,41 @@
   <priority>0.64</priority>
   <changefreq>monthly</changefreq>
 </url>
-
+<url>
+  <loc>https://studiofran.co/404.html</loc>
+  <lastmod>2026-11-12</lastmod>
+  <priority>0.40</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://studiofran.co/projects/lobe.html</loc>
+  <lastmod>2026-11-12</lastmod>
+  <priority>0.60</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://studiofran.co/projects/lego-sorter.html</loc>
+  <lastmod>2026-11-12</lastmod>
+  <priority>0.60</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://studiofran.co/projects/thesis.html</loc>
+  <lastmod>2026-11-12</lastmod>
+  <priority>0.60</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://studiofran.co/projects/nd-tsa.html</loc>
+  <lastmod>2026-11-12</lastmod>
+  <priority>0.60</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://studiofran.co/projects/this-website.html</loc>
+  <lastmod>2026-11-12</lastmod>
+  <priority>0.60</priority>
+  <changefreq>yearly</changefreq>
+</url>
 
 </urlset>

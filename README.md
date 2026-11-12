@@ -12,7 +12,7 @@ This is my personal portfolio site, a place where I share my builds, thoughts, a
 
 ### Whats Inside
 
-- ~~Projects I've worked on~~ (coming soon)
+- Projects I've worked on
 - Blog posts and drafts
 - My setup, tools, and philosophy
 
@@ -20,7 +20,7 @@ This is my personal portfolio site, a place where I share my builds, thoughts, a
 
 - ~~Learn.md~~
 - ~~Documentation~~
-- Projects
+- ~~Projects~~
 - ~~Blogs~~
 - ~~Optimize for iPhone~~
 

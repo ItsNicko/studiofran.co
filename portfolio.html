@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Studio Franco portfolio — upcoming projects in AI, hardware hacking, and creative engineering by Nickolas Franco."
+      content="Studio Franco portfolio  projects in AI, hardware hacking, and creative engineering by Nickolas Franco."
     />
     <meta name="author" content="Nickolas Franco" />
     <meta name="robots" content="index, follow" />
@@ -14,7 +14,7 @@
     <meta property="og:title" content="Portfolio | Studio Franco" />
     <meta
       property="og:description"
-      content="Upcoming projects in AI, hardware hacking, and creative engineering by Nickolas Franco."
+      content="Projects in AI, hardware hacking, and creative engineering by Nickolas Franco."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://studiofran.co/portfolio" />
@@ -27,7 +27,7 @@
     <meta name="twitter:title" content="Portfolio | Studio Franco" />
     <meta
       name="twitter:description"
-      content="Upcoming projects in AI, hardware hacking, and creative engineering by Nickolas Franco."
+      content="Projects in AI, hardware hacking, and creative engineering by Nickolas Franco."
     />
     <meta
       name="twitter:image"
@@ -58,24 +58,10 @@
         ]
       }
     </script>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="Assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="Assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="Assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="Assets/site.webmanifest" />
+  <link rel="icon" type="image/png" sizes="512x512" href="Assets/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="Assets/favicon/favicon.ico">
     <style>
       * {
         outline: none;
@@ -88,7 +74,7 @@
         --theme-color: #f9fafb;
         --inactive-color: rgba(222, 222, 222, 0.78);
         --body-font:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+          -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
         --hover-menu-bg: rgba(12 15 25 / 30%);
         --content-title-color: #999ba5;
         --content-bg: rgb(146 151 179 / 13%);
@@ -131,7 +117,7 @@
       body {
         font-family:
           -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
-          "Segoe UI", Roboto, sans-serif;
+          "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
         background-image: url("/Assets/static.webp");
         background-size: cover;
         background-position: center;
@@ -181,7 +167,7 @@
       }
 
       main {
-        color: white;
+        color: rgba(255, 255, 255, 0.92);
         padding: 0;
       }
 
@@ -192,9 +178,10 @@
         display: flex;
         flex-direction: column;
         box-shadow:
-          0 8px 32px rgba(0, 0, 0, 0.3),
-          0 2px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 14px;
+          0 24px 80px rgba(0, 0, 0, 0.28),
+          0 2px 8px rgba(0, 0, 0, 0.12);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
         overflow: hidden;
         transition: min-height 0.45s cubic-bezier(0.4, 0, 0.25, 1);
       }
@@ -208,10 +195,10 @@
         align-items: center;
         height: 38px;
         padding: 0 16px;
-        background: rgba(28, 28, 30, 0.55);
-        backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(30, 30, 32, 0.45);
+        backdrop-filter: blur(24px) saturate(180%);
+        -webkit-backdrop-filter: blur(24px) saturate(180%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         flex-shrink: 0;
         user-select: none;
         -webkit-user-select: none;
@@ -219,9 +206,9 @@
 
       .window-content {
         flex: 1;
-        background: rgba(28, 28, 30, 0.5);
-        backdrop-filter: blur(12px) saturate(150%);
-        -webkit-backdrop-filter: blur(12px) saturate(150%);
+        background: rgba(22, 22, 24, 0.38);
+        backdrop-filter: blur(20px) saturate(160%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%);
         overflow-y: auto;
         max-height: 3000px;
         padding: 2rem;
@@ -241,9 +228,10 @@
       .chrome-nav a {
         padding: 6px 10px;
         text-decoration: none;
-        color: rgba(255, 255, 255, 0.6);
-        border-radius: 6px;
-        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.72);
+        border-radius: 8px;
+        font-size: 0.8125rem;
+        font-weight: 500;
         transition:
           background 0.15s ease,
           color 0.15s ease;
@@ -251,7 +239,7 @@
 
       .chrome-nav a:hover,
       .chrome-nav a.is-active {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.14);
         color: #fff;
       }
 
@@ -297,9 +285,9 @@
         flex: 1;
         text-align: center;
         font-size: 0.85rem;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 0.7);
-        letter-spacing: 0.02em;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.82);
+        letter-spacing: 0.01em;
       }
 
       .chrome-spacer {
@@ -357,7 +345,8 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
-        color: white;
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.875rem;
         font-weight: 400;
       }
 
@@ -373,32 +362,28 @@
 
       a {
         text-decoration: none;
-        color: rgb(255, 255, 255);
+        color: inherit;
       }
 
       .link {
-        color: #fff;
+        color: #2997ff;
         text-decoration: none;
-        display: inline-block;
-        padding: 15px 0;
-        position: relative;
+        display: inline;
+        padding: 0;
+        position: static;
+        transition: color 0.2s ease, text-decoration-color 0.2s ease;
+      }
+      .link:hover {
+        color: #5ac8fa;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
       }
       .link:after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 0;
-        position: absolute;
-        background: #fff;
-        transition: transform 0.3s ease;
-        transform: scaleX(0);
-        transform-origin: center;
-        width: 100%;
+        display: none;
       }
       .link:hover:after {
-        transform: scaleX(1);
+        transform: none;
       }
 
       .main-header .header-menu a {
@@ -421,8 +406,8 @@
       }
 
       h1 {
-        font-size: 3rem;
-        font-weight: 700;
+        font-size: clamp(2.25rem, 5vw, 3.25rem);
+        font-weight: 600;
         letter-spacing: -0.02em;
         line-height: 1.1;
       }
@@ -432,7 +417,7 @@
         font-weight: 600;
         letter-spacing: -0.015em;
         line-height: 1.15;
-        color: white;
+        color: rgba(255, 255, 255, 0.96);
       }
 
       h3 {
@@ -440,7 +425,7 @@
         font-weight: 600;
         letter-spacing: -0.01em;
         line-height: 1.2;
-        color: white;
+        color: rgba(255, 255, 255, 0.96);
       }
 
       h4 {
@@ -464,8 +449,8 @@
 
       p {
         font-size: 1.0625rem;
-        color: white;
-        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.65;
         letter-spacing: -0.005em;
       }
 
@@ -512,15 +497,377 @@
       }
 
       .window-minimize-checkbox:checked ~ .window-chrome .window-title::after {
-        content: " — Minimized";
+        content: "  Minimized";
       }
 
       h1 {
         text-align: center;
       }
-    </style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .featured-project {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 32px;
+        margin-top: 32px;
+        transition:
+          transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+          box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+          background 0.3s ease;
+        width: 100%;
+        min-height: 560px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow:
+          0 1px 3px rgba(0, 0, 0, 0.12),
+          0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      .featured-project:hover,
+      .featured-project:focus-within {
+        transform: translateY(-4px);
+        box-shadow:
+          0 2px 8px rgba(0, 0, 0, 0.16),
+          0 8px 24px rgba(0, 0, 0, 0.12);
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .featured-project h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+
+      .featured-project p {
+        font-size: 1.125rem;
+        opacity: 0.7;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        line-clamp: 8;
+        -webkit-box-orient: vertical;
+        line-height: 1.6;
+        letter-spacing: -0.005em;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-top: 24px;
+      }
+
+      .card-wrapper {
+        width: 100%;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .card-wrapper:focus {
+        outline: none;
+      }
+
+      .project-card {
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition:
+          transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+          box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+          background 0.3s ease;
+        padding: 24px;
+        width: 100%;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        box-shadow:
+          0 1px 2px rgba(0, 0, 0, 0.08),
+          0 2px 8px rgba(0, 0, 0, 0.06);
+      }
+
+      .project-card:hover,
+      .project-card:focus-within {
+        transform: translateY(-3px);
+        box-shadow:
+          0 2px 4px rgba(0, 0, 0, 0.12),
+          0 8px 20px rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .project-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+      }
+
+      .project-card p {
+        font-size: 1rem;
+        opacity: 0.6;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        line-clamp: 6;
+        -webkit-box-orient: vertical;
+        line-height: 1.6;
+        letter-spacing: -0.005em;
+      }
+
+      .project-tag {
+        display: inline-block;
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .project-date {
+        display: block;
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.4);
+        margin-top: 10px;
+        font-family: "SF Mono", Monaco, Consolas, monospace;
+      }
+
+      @media screen and (max-width: 768px) {
+        .project-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .project-card {
+          min-height: 320px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .project-card {
+          min-height: 280px;
+          padding: 20px;
+        }
+
+        .project-card h3 {
+          font-size: 1.25rem;
+        }
+      }
+
+      /* ===== FILTER BAR ===== */
+      .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-bottom: 32px;
+        align-items: baseline;
+      }
+
+      .filter-label {
+        font-size: 0.75rem;
+        color: rgba(255, 255, 255, 0.4);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-right: 12px;
+        white-space: nowrap;
+      }
+
+      .filter-toggle {
+        display: none;
+      }
+
+      .filter-chip {
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition: color 0.2s ease, border-color 0.2s ease;
+        user-select: none;
+        white-space: nowrap;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 4px;
+      }
+
+      .filter-chip:hover {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .filter-toggle:checked + .filter-chip {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+      }
+
+      /* Default: All selected -> show all cards */
+      .filter-bar:has(#filter-all:checked) ~ .project-grid .card-wrapper,
+      .filter-bar:has(#filter-all:checked) ~ .main-post {
+        display: block;
+      }
+
+      /* Specific filter selected -> hide all cards first */
+      .filter-bar:has(#filter-ai:checked) ~ .project-grid .card-wrapper,
+      .filter-bar:has(#filter-hardware:checked) ~ .project-grid .card-wrapper,
+      .filter-bar:has(#filter-web:checked) ~ .project-grid .card-wrapper,
+      .filter-bar:has(#filter-fullstack:checked) ~ .project-grid .card-wrapper,
+      .filter-bar:has(#filter-design:checked) ~ .project-grid .card-wrapper,
+      .filter-bar:has(#filter-ai:checked) ~ .main-post,
+      .filter-bar:has(#filter-hardware:checked) ~ .main-post,
+      .filter-bar:has(#filter-web:checked) ~ .main-post,
+      .filter-bar:has(#filter-fullstack:checked) ~ .main-post,
+      .filter-bar:has(#filter-design:checked) ~ .main-post {
+        display: none;
+      }
+
+      /* Then show matching ones */
+      .filter-bar:has(#filter-ai:checked) ~ .project-grid .card-wrapper.ai,
+      .filter-bar:has(#filter-ai:checked) ~ .project-grid .card-wrapper.hardware,
+      .filter-bar:has(#filter-ai:checked) ~ .project-grid .card-wrapper.robotics,
+      .filter-bar:has(#filter-ai:checked) ~ .main-post.ai,
+      .filter-bar:has(#filter-ai:checked) ~ .main-post.hardware {
+        display: block;
+      }
+
+      .filter-bar:has(#filter-hardware:checked) ~ .project-grid .card-wrapper.hardware,
+      .filter-bar:has(#filter-hardware:checked) ~ .project-grid .card-wrapper.robotics,
+      .filter-bar:has(#filter-hardware:checked) ~ .main-post.hardware,
+      .filter-bar:has(#filter-hardware:checked) ~ .main-post.robotics {
+        display: block;
+      }
+
+      .filter-bar:has(#filter-web:checked) ~ .project-grid .card-wrapper.web,
+      .filter-bar:has(#filter-web:checked) ~ .project-grid .card-wrapper.cms {
+        display: block;
+      }
+
+      .filter-bar:has(#filter-fullstack:checked) ~ .project-grid .card-wrapper.fullstack,
+      .filter-bar:has(#filter-fullstack:checked) ~ .project-grid .card-wrapper.firebase {
+        display: block;
+      }
+
+      .filter-bar:has(#filter-design:checked) ~ .project-grid .card-wrapper.design {
+        display: block;
+      }
+      /* window state: windowed by default, #maximized fills the viewport */
+      body:target {
+        padding: 0;
+      }
+
+      body:target .app {
+        height: 100vh;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      body:target .app:has(.window-minimize-checkbox:checked) {
+        height: auto;
+        min-height: 0;
+      }
+
+      .dot.restore {
+        display: none;
+        background: #28c840;
+      }
+
+      .dot.restore:hover {
+        background: #1db954;
+      }
+
+      body:target .dot.maximize {
+        display: none;
+      }
+
+      body:target .dot.restore {
+        display: block;
+      }
+
+      .chrome-nav-max {
+        display: none;
+      }
+
+      body:target .chrome-nav:not(.chrome-nav-max) {
+        display: none;
+      }
+
+      body:target .chrome-nav-max {
+        display: flex;
+      }
+
+      .chrome-utils-max {
+        display: none;
+      }
+
+      body:target .chrome-utils:not(.chrome-utils-max) {
+        display: none;
+      }
+
+      body:target .chrome-utils-max {
+        display: flex;
+      }
+
+      @media screen and (max-width: 480px) {
+        body:target .chrome-utils-max {
+          display: none;
+        }
+      }
+
+/* window close -> dock */
+.window-close-checkbox { display: none; }
+.app-dock {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(140%) scale(0.7);
+  opacity: 0;
+  z-index: 9999;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+  pointer-events: none;
+}
+.app-dock label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(30,30,32,0.55);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  cursor: pointer;
+}
+.app-dock img { width: 48px; height: 48px; border-radius: 10px; }
+/* base app transition for close/open */
+.app {
+  transform-origin: center bottom;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+}
+.app:has(.window-close-checkbox:checked) {
+  transform: scale(0.2) translateY(60vh);
+  opacity: 0;
+  pointer-events: none;
+}
+body:has(.window-close-checkbox:checked) .app-dock {
+  transform: translateX(-50%) translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+</style>
   </head>
-  <body translate="no">
+  <body id="maximized" translate="no">
     <div class="video-bg">
       <video
         autoplay
@@ -540,15 +887,17 @@
         id="window-minimize"
         class="window-minimize-checkbox"
       />
+    <input type="checkbox" id="window-close" class="window-close-checkbox" />
       <div class="window-chrome">
         <div class="traffic-lights">
-          <span class="dot close"></span>
+          <label for="window-close" class="dot close" aria-label="Close window"></label>
           <label
             for="window-minimize"
             class="dot minimize"
             aria-label="Minimize window"
           ></label>
-          <span class="dot maximize"></span>
+          <a class="dot maximize" href="#maximized" aria-label="Maximize window" title="Maximize"></a>
+          <a class="dot restore" href="#" aria-label="Restore window" title="Restore"></a>
         </div>
         <span class="window-title">Studio Franco</span>
         <div class="chrome-spacer"></div>
@@ -556,8 +905,15 @@
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a class="is-active" href="portfolio.html">Portfolio</a>
-          <a href="blog.html">Posts</a>
+          <a href="blog.html">Blog</a>
           <a href="connect.html">Connect</a>
+        </nav>
+        <nav class="chrome-nav chrome-nav-max">
+          <a href="index.html#maximized">Home</a>
+          <a href="about.html#maximized">About</a>
+          <a class="is-active" href="portfolio.html#maximized">Portfolio</a>
+          <a href="blog.html#maximized">Blog</a>
+          <a href="connect.html#maximized">Connect</a>
         </nav>
         <div class="chrome-utils">
           <a href="connect.html" class="icon-btn" aria-label="Notifications">
@@ -574,9 +930,9 @@
               <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" />
               <path d="M13.73 21a2 2 0 01-3.46 0" />
             </svg>
-            <span class="notification-number">3</span>
+            <span class="notification-number"></span>
           </a>
-          <a href="blog.html" class="icon-btn" aria-label="Blog posts">
+          <a href="Assets/resume-nickolas-franco-2026.pdf" class="icon-btn" aria-label="Resume" target="_blank"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
             <svg
               viewbox="0 0 24 24"
               fill="none"
@@ -602,15 +958,154 @@
             />
           </a>
         </div>
+<div class="chrome-utils chrome-utils-max">
+          <a href="connect.html#maximized" class="icon-btn" aria-label="Notifications">
+            <svg
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              width="20"
+              height="20"
+            >
+              <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" />
+              <path d="M13.73 21a2 2 0 01-3.46 0" />
+            </svg>
+            <span class="notification-number"></span>
+          </a>
+          <a href="Assets/resume-nickolas-franco-2026.pdf" class="icon-btn" aria-label="Resume" target="_blank"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <svg
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              width="20"
+              height="20"
+            >
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
+          </a>
+          <a href="about.html#maximized" class="icon-btn" aria-label="Profile">
+            <img
+              class="profile-img"
+              src="Assets/Profile_small.webp"
+              alt="Nickolas Franco"
+            />
+          </a>
+        </div>
       </div>
       <div class="window-content">
         <main>
-          <h1>Coming Soon</h1>
+          <div class="filter-bar">
+            <span class="filter-label">Filter by:</span>
+            <input type="radio" id="filter-all" name="filter" class="filter-toggle" checked />
+            <label for="filter-all" class="filter-chip">All</label>
+            <input type="radio" id="filter-ai" name="filter" class="filter-toggle" />
+            <label for="filter-ai" class="filter-chip">AI</label>
+            <input type="radio" id="filter-hardware" name="filter" class="filter-toggle" />
+            <label for="filter-hardware" class="filter-chip">Hardware / Robotics</label>
+            <input type="radio" id="filter-web" name="filter" class="filter-toggle" />
+            <label for="filter-web" class="filter-chip">Web</label>
+            <input type="radio" id="filter-fullstack" name="filter" class="filter-toggle" />
+            <label for="filter-fullstack" class="filter-chip">Full Stack</label>
+            <input type="radio" id="filter-design" name="filter" class="filter-toggle" />
+            <label for="filter-design" class="filter-chip">Design</label>
+          </div>
+          <div class="project-grid">
+            <a href="/projects/lego-sorter.html" class="card-wrapper robotics ai" tabindex="0">
+              <div class="project-card">
+                <span class="project-tag">Robotics / AI</span>
+                <h3>LEGO Sorter: AI Detection & Motor Control</h3>
+                <p>An automated LEGO sorting machine that combines mechanical design, embedded systems, and machine learning into one capstone project. I trained a TensorFlow model to classify LEGO bricks by type and size in real time, designed the full power distribution and motor control circuitry, wired the sensor array, and built an interactive display that shows live classification results and bin assignments. The machine physically routes each brick to its correct bin using servo-driven gates, demonstrating the full pipeline from computer vision to physical actuation.</p>
+                <span class="project-date">Oct 19, 2025</span>
+              </div>
+            </a>
+            <a href="/projects/thesis.html" class="card-wrapper fullstack firebase" tabindex="0">
+              <div class="project-card">
+                <span class="project-tag">Full Stack / Firebase</span>
+                <h3>thesis (formerly FBLACER): FBLA Prep Platform</h3>
+                <p>A gamified flash card and test prep platform built specifically for FBLA competition prep. I architected a modular frontend that lets students drill through topic-specific decks, built Firebase authentication and image storage into the backend, and implemented an email-free auth workaround using @fblacer.local domains so students could sign up without personal email addresses. The platform is designed around dopamine-driven engagement loops-streaks, XP, and level progression-to make repetitive study feel like a game rather than a chore.</p>
+                <span class="project-date">Jun 29, 2026</span>
+              </div>
+            </a>
+            <a href="/projects/nd-tsa.html" class="card-wrapper web cms" tabindex="0">
+              <div class="project-card">
+                <span class="project-tag">Web / CMS</span>
+                <h3>ND TSA Website & CMS</h3>
+                <p>A complete rebuild of the North Dakota TSA state website with modern styling and a custom content management system. Firebase handles authentication, the GitHub API integration manages admin-panel commits directly from the dashboard, and the admin interface runs on Vercel while published content is served through Cloudflare Pages. The result is an end-to-end maintainable publishing workflow that lets the TSA team update event pages, registration forms, and competition resources without touching a line of code.</p>
+                <span class="project-date">Dec 10, 2025</span>
+              </div>
+            </a>
+            <a href="/projects/this-website.html" class="card-wrapper web design" tabindex="0">
+              <div class="project-card">
+                <span class="project-tag">Web / Design</span>
+                <h3>This Website</h3>
+                <p>Studio Franco - this site. Hand-coded static website using pure HTML and CSS, no frameworks, no build step, no dependencies. Glassmorphism UI with backdrop-filter blur layers, custom macOS window chrome with working minimize animation, fullscreen video background, and responsive layouts that work on iPhone and desktop. Deployed to Cloudflare Pages with a custom domain and Cloudflare Email Routing for hello@studiofran.co. Every page is a standalone HTML file with embedded CSS.</p>
+                <span class="project-date">Nov 12, 2026</span>
+              </div>
+            </a>
+            <a href="https://github.com/ItsNicko/Codespace-Firefox" target="_blank" class="card-wrapper web fullstack" tabindex="0">
+              <div class="project-card">
+                <span class="project-tag">Web / Tools</span>
+                <h3>Codespace-Firefox</h3>
+                <p>An experiment in running the Firefox web browser entirely inside GitHub Codespaces. I configured a headless Firefox instance with X virtual framebuffer, exposed it through a noVNC web interface, and tuned the container so the browser launches and renders web pages inside a cloud development environment. The project explores how far you can push a browser-based desktop experience inside an ephemeral codespace.</p>
+                <span class="project-date">Apr 15, 2026</span>
+              </div>
+            </a>
+            <a href="https://github.com/ItsNicko/CLIPPED" target="_blank" class="card-wrapper web fullstack javascript" tabindex="0">
+              <div class="project-card">
+                <span class="project-tag">Web / Automation</span>
+                <h3>CLIPPED</h3>
+                <p>A polling and integration pipeline that bridges Google Classroom and Discord. I built a Google Apps Script backend that watches Classroom for new assignments and announcements, then pushes formatted notifications into Discord channels via webhook. The system handles authentication, rate limiting, and message formatting so students and teachers get real-time classroom updates without leaving Discord.</p>
+                <span class="project-date">Feb 26, 2026</span>
+              </div>
+            </a>
+            <a href="https://github.com/ItsNicko/TSA-Administrator-Page" target="_blank" class="card-wrapper web cms" tabindex="0">
+              <div class="project-card">
+                <span class="project-tag">Web / CMS</span>
+                <h3>TSA Administrator Page</h3>
+                <p>The TSA Administrator Page provides an admin interface for the North Dakota TSA state organization. Built with HTML and CSS, it connects to Firebase for secure login and to the GitHub API so administrators can commit changes to the main TSA website repository directly from the admin dashboard. Includes event management, user role controls, and a publishing workflow for state competition content.</p>
+                <span class="project-date">Oct 2, 2025</span>
+              </div>
+            </a>
+            <a href="https://github.com/ItsNicko/FetchClassroomData" target="_blank" class="card-wrapper web automation javascript" tabindex="0">
+              <div class="project-card">
+                <span class="project-tag">Web / Automation</span>
+                <h3>FetchClassroomData</h3>
+                <p>A pipeline that pushes Google Classroom tasks into Microsoft To Do so students never miss an assignment. I built it with Google Apps Script, Sheets as the data store, and n8n for workflow orchestration. The script polls Classroom for new coursework, normalizes due dates and descriptions, and creates corresponding To Do tasks with reminders-bypassing the limitations of both platforms' native APIs.</p>
+                <span class="project-date">Aug 10, 2025</span>
+              </div>
+            </a>
+            <a href="https://github.com/ItsNicko/Minot-First-Robotics" target="_blank" class="card-wrapper hardware robotics web" tabindex="0">
+              <div class="project-card">
+                <span class="project-tag">Hardware / Web</span>
+                <h3>Minot First Robotics</h3>
+                <p>Websites for all three Minot First Robotics programs - FIRST LEGO League, FIRST Tech Challenge, and FIRST Robotics Competition. I built each site with HTML and CSS, integrated Firebase for form submissions, event registration, and student sign-ups, and connected the admin panels to the GitHub API so mentors can push updates directly from the browser. Each site hosts team bios, competition schedules, sponsor information, build season documentation, and outreach materials.</p>
+                <span class="project-date">May 1, 2026</span>
+              </div>
+            </a>
+          </div>
         </main>
         <footer>
-          <p>© 2025 Nicko | Built with raw HTML + CSS.</p>
+          <p>© 2026 Nicko | Built with raw HTML + CSS.</p>
         </footer>
       </div>
+  </div>
+        <div class="app-dock" aria-hidden="false">
+      <label for="window-close" aria-label="Restore window">
+        <img src="Assets/favicon/android-chrome-512x512.png" alt="Open app" />
+      </label>
     </div>
   </body>
 </html>
+
+
+

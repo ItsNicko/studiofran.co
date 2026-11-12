@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Connect with Nickolas Franco — reach out for projects, collaborations, or just to say hello. Email, social links, and contact details."
+      content="Nickolas Franco's contact page. Reach out about projects, collaborations, or just to say hello. Email, social links, and a few words from me."
     />
     <meta name="author" content="Nickolas Franco" />
     <meta name="robots" content="index, follow" />
@@ -41,7 +41,7 @@
             "@type": "ContactPage",
             "@id": "https://studiofran.co/connect#contactpage",
             "name": "Connect",
-            "description": "Contact page for Nickolas Franco — email, social links, and collaboration details.",
+            "description": "Contact page for Nickolas Franco  email, social links, and collaboration details.",
             "mainEntity": {
               "@type": "Person",
               "name": "Nickolas Franco",
@@ -78,24 +78,10 @@
         ]
       }
     </script>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="Assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="Assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="Assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="Assets/site.webmanifest" />
+  <link rel="icon" type="image/png" sizes="512x512" href="Assets/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="Assets/favicon/favicon.ico">
     <style>
       * {
         outline: none;
@@ -108,7 +94,7 @@
         --theme-color: #f9fafb;
         --inactive-color: rgba(222, 222, 222, 0.78);
         --body-font:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+          -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
         --hover-menu-bg: rgba(12 15 25 / 30%);
         --content-title-color: #999ba5;
         --content-bg: rgb(146 151 179 / 13%);
@@ -151,7 +137,7 @@
       body {
         font-family:
           -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
-          "Segoe UI", Roboto, sans-serif;
+          "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
         background-image: url("/Assets/static.webp");
         background-size: cover;
         background-position: center;
@@ -201,7 +187,7 @@
       }
 
       main {
-        color: white;
+        color: rgba(255, 255, 255, 0.92);
         padding: 0;
       }
 
@@ -212,9 +198,10 @@
         display: flex;
         flex-direction: column;
         box-shadow:
-          0 8px 32px rgba(0, 0, 0, 0.3),
-          0 2px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 14px;
+          0 24px 80px rgba(0, 0, 0, 0.28),
+          0 2px 8px rgba(0, 0, 0, 0.12);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
         overflow: hidden;
         transition: min-height 0.45s cubic-bezier(0.4, 0, 0.25, 1);
       }
@@ -228,10 +215,10 @@
         align-items: center;
         height: 38px;
         padding: 0 16px;
-        background: rgba(28, 28, 30, 0.55);
-        backdrop-filter: blur(20px) saturate(180%);
-        -webkit-backdrop-filter: blur(20px) saturate(180%);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(30, 30, 32, 0.45);
+        backdrop-filter: blur(24px) saturate(180%);
+        -webkit-backdrop-filter: blur(24px) saturate(180%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         flex-shrink: 0;
         user-select: none;
         -webkit-user-select: none;
@@ -239,9 +226,9 @@
 
       .window-content {
         flex: 1;
-        background: rgba(28, 28, 30, 0.5);
-        backdrop-filter: blur(12px) saturate(150%);
-        -webkit-backdrop-filter: blur(12px) saturate(150%);
+        background: rgba(22, 22, 24, 0.38);
+        backdrop-filter: blur(20px) saturate(160%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%);
         overflow-y: auto;
         max-height: 3000px;
         padding: 2rem;
@@ -261,9 +248,10 @@
       .chrome-nav a {
         padding: 6px 10px;
         text-decoration: none;
-        color: rgba(255, 255, 255, 0.6);
-        border-radius: 6px;
-        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.72);
+        border-radius: 8px;
+        font-size: 0.8125rem;
+        font-weight: 500;
         transition:
           background 0.15s ease,
           color 0.15s ease;
@@ -271,7 +259,7 @@
 
       .chrome-nav a:hover,
       .chrome-nav a.is-active {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.14);
         color: #fff;
       }
 
@@ -317,9 +305,9 @@
         flex: 1;
         text-align: center;
         font-size: 0.85rem;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 0.7);
-        letter-spacing: 0.02em;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.82);
+        letter-spacing: 0.01em;
       }
 
       .chrome-spacer {
@@ -377,7 +365,8 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
-        color: white;
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.875rem;
         font-weight: 400;
       }
 
@@ -393,32 +382,28 @@
 
       a {
         text-decoration: none;
-        color: rgb(255, 255, 255);
+        color: inherit;
       }
 
       .link {
-        color: #fff;
+        color: #2997ff;
         text-decoration: none;
-        display: inline-block;
-        padding: 15px 0;
-        position: relative;
+        display: inline;
+        padding: 0;
+        position: static;
+        transition: color 0.2s ease, text-decoration-color 0.2s ease;
+      }
+      .link:hover {
+        color: #5ac8fa;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
       }
       .link:after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 0;
-        position: absolute;
-        background: #fff;
-        transition: transform 0.3s ease;
-        transform: scaleX(0);
-        transform-origin: center;
-        width: 100%;
+        display: none;
       }
       .link:hover:after {
-        transform: scaleX(1);
+        transform: none;
       }
 
       .main-header .header-menu a {
@@ -427,22 +412,17 @@
 
       ::-webkit-scrollbar {
         width: 6px;
+        height: 6px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-bg);
         border-radius: 10px;
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-          min-height: 100%;
-        }
-        ::-webkit-scrollbar-thumb {
-          background: var(--scrollbar-bg);
-          border-radius: 10px;
-        }
       }
 
       h1 {
-        font-size: 3rem;
-        font-weight: 700;
+        font-size: clamp(2.25rem, 5vw, 3.25rem);
+        font-weight: 600;
         letter-spacing: -0.02em;
         line-height: 1.1;
       }
@@ -452,7 +432,7 @@
         font-weight: 600;
         letter-spacing: -0.015em;
         line-height: 1.15;
-        color: white;
+        color: rgba(255, 255, 255, 0.96);
       }
 
       h3 {
@@ -460,7 +440,7 @@
         font-weight: 600;
         letter-spacing: -0.01em;
         line-height: 1.2;
-        color: white;
+        color: rgba(255, 255, 255, 0.96);
       }
 
       h4 {
@@ -484,8 +464,8 @@
 
       p {
         font-size: 1.0625rem;
-        color: white;
-        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.65;
         letter-spacing: -0.005em;
       }
 
@@ -532,22 +512,31 @@
       }
 
       .window-minimize-checkbox:checked ~ .window-chrome .window-title::after {
-        content: " — Minimized";
+        content: "  Minimized";
       }
 
       .showcase-container {
         display: flex;
         flex-direction: row;
-        gap: 12px;
+        gap: 16px;
         padding: 24px;
         max-width: 100%;
         overflow-x: auto;
-        scroll-snap-type: x mandatory;
+        overflow-y: hidden;
+        overscroll-behavior-x: contain;
+        overflow-anchor: none;
         -webkit-overflow-scrolling: touch;
         justify-content: center;
         position: relative;
         z-index: 2;
         box-sizing: border-box;
+        scrollbar-width: none;
+      }
+
+      .showcase-container::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
       }
 
       .card {
@@ -555,19 +544,19 @@
         height: 480px;
         background: rgba(255, 255, 255, 0.06);
         border-radius: 16px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.08);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         transition:
-          width 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-          height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+          width 0.45s cubic-bezier(0.25, 1, 0.5, 1),
           box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-          background 0.3s ease;
+          background 0.3s ease,
+          transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+        transition-delay: 0s;
         position: relative;
         overflow: hidden;
-        scroll-snap-align: center;
         touch-action: pan-x;
         box-sizing: border-box;
         cursor: pointer;
@@ -575,61 +564,114 @@
         box-shadow:
           0 1px 2px rgba(0, 0, 0, 0.08),
           0 2px 8px rgba(0, 0, 0, 0.06);
-        backdrop-filter: blur(12px) saturate(150%);
-        -webkit-backdrop-filter: blur(12px) saturate(150%);
+        padding: 24px;
       }
 
-      .card:focus {
-        outline: none;
+      .card::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        left: -8px;
+        right: -8px;
       }
 
-      .card.active,
+      .pin-toggle {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      /* Contact open by default when nothing hovered/pinned */
+      .showcase-container:not(:has(.card:hover)):not(:has(.card:focus-within)):not(:has(.pin-toggle:checked)) .card:last-child {
+        width: 400px;
+        height: 480px;
+        box-shadow:
+          0 2px 4px rgba(0, 0, 0, 0.12),
+          0 8px 20px rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.1);
+        z-index: 1;
+        transform: translateY(-3px);
+      }
+
+      .showcase-container:not(:has(.card:hover)):not(:has(.card:focus-within)):not(:has(.pin-toggle:checked)) .card:last-child .title-collapsed {
+        opacity: 0;
+      }
+
+      .showcase-container:not(:has(.card:hover)):not(:has(.card:focus-within)):not(:has(.pin-toggle:checked)) .card:last-child .content {
+        opacity: 1;
+      }
+
+      /* Pinned (clicked) - stays open */
+      .pin-toggle:checked + .card {
+        width: 400px;
+        height: 480px;
+        box-shadow:
+          0 2px 4px rgba(0, 0, 0, 0.12),
+          0 8px 20px rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.1);
+        z-index: 2;
+        transform: translateY(-3px);
+      }
+
+      .pin-toggle:checked + .card .title-collapsed {
+        opacity: 0;
+      }
+
+      .pin-toggle:checked + .card .content {
+        opacity: 1;
+      }
+
+      /* Hover/focus - temporary open */
       .card:hover,
       .card:focus-within {
         width: 400px;
         height: 480px;
         box-shadow:
           0 2px 4px rgba(0, 0, 0, 0.12),
-          0 8px 24px rgba(0, 0, 0, 0.1);
+          0 8px 20px rgba(0, 0, 0, 0.1);
         background: rgba(255, 255, 255, 0.1);
+        z-index: 1;
+        transform: translateY(-3px);
       }
 
-      .card.active .title-collapsed,
       .card:hover .title-collapsed,
       .card:focus-within .title-collapsed {
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.25s ease 0.15s;
       }
 
-      .card.active .content,
       .card:hover .content,
       .card:focus-within .content {
         opacity: 1;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease 0.2s;
       }
 
-      .showcase-container:hover .card.active:not(:hover),
-      .showcase-container:focus-within .card.active:not(:focus-within) {
+      /* Close non-pinned, non-hovered cards when any card is hovered/pinned */
+      .showcase-container:has(.card:hover) .card:not(:hover):not(:has(+ .pin-toggle:checked)),
+      .showcase-container:has(.card:focus-within) .card:not(:focus-within):not(:has(+ .pin-toggle:checked)),
+      .showcase-container:has(.pin-toggle:checked + .card) .card:not(:hover):not(:focus-within):not(:has(+ .pin-toggle:checked)) {
         width: 90px;
         height: 480px;
         box-shadow:
           0 1px 2px rgba(0, 0, 0, 0.08),
           0 2px 8px rgba(0, 0, 0, 0.06);
         background: rgba(255, 255, 255, 0.06);
+        transform: translateY(0);
       }
 
-      .showcase-container:hover .card.active:not(:hover) .content,
-      .showcase-container:focus-within
-        .card.active:not(:focus-within)
-        .content {
-        opacity: 0;
-      }
-
-      .showcase-container:hover .card.active:not(:hover) .title-collapsed,
-      .showcase-container:focus-within
-        .card.active:not(:focus-within)
-        .title-collapsed {
+      .showcase-container:has(.card:hover) .card:not(:hover):not(:has(+ .pin-toggle:checked)) .title-collapsed,
+      .showcase-container:has(.card:focus-within) .card:not(:focus-within):not(:has(+ .pin-toggle:checked)) .title-collapsed,
+      .showcase-container:has(.pin-toggle:checked + .card) .card:not(:hover):not(:focus-within):not(:has(+ .pin-toggle:checked)) .title-collapsed {
         opacity: 1;
+        transition: opacity 0.25s ease 0.15s;
+      }
+
+      .showcase-container:has(.card:hover) .card:not(:hover):not(:has(+ .pin-toggle:checked)) .content,
+      .showcase-container:has(.card:focus-within) .card:not(:focus-within):not(:has(+ .pin-toggle:checked)) .content,
+      .showcase-container:has(.pin-toggle:checked + .card) .card:not(:hover):not(:focus-within):not(:has(+ .pin-toggle:checked)) .content {
+        opacity: 0;
+        transition: opacity 0.2s ease 0.15s;
       }
 
       .title-collapsed {
@@ -641,6 +683,7 @@
         letter-spacing: 1px;
         opacity: 1;
         transition: opacity 0.3s ease;
+        transition-delay: 0s;
       }
 
       .content {
@@ -655,6 +698,7 @@
         align-items: center;
         opacity: 0;
         transition: opacity 0.3s ease;
+        transition-delay: 0s;
         color: rgba(255, 255, 255, 0.9);
         padding: 24px;
         text-align: center;
@@ -713,6 +757,7 @@
         .showcase-container {
           flex-direction: column;
           align-items: center;
+          justify-content: flex-start;
           padding: 12px;
           overflow-x: hidden;
           overflow-y: auto;
@@ -727,35 +772,37 @@
           max-width: calc(100% - 20px);
           height: 56px;
           margin-bottom: 8px;
+          border: 1px solid rgba(255, 255, 255, 0.08);
           transition:
-            height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+            height 0.35s cubic-bezier(0.25, 1, 0.5, 1),
             box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-            background 0.3s ease;
+            background 0.3s ease,
+            transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
         }
 
-        .card.active,
+        .showcase-container:not(:has(.card:hover)):not(:has(.card:focus-within)):not(:has(.pin-toggle:checked)) .card:last-child {
+          height: 260px;
+          transform: translateY(-3px);
+        }
+
+        .pin-toggle:checked + .card {
+          height: 260px;
+          width: 100%;
+          transform: translateY(-3px);
+        }
+
         .card:hover,
         .card:focus-within {
           height: 260px;
+          width: 100%;
+          transform: translateY(-3px);
         }
 
-        .showcase-container:hover .card.active:not(:hover),
-        .showcase-container:focus-within .card.active:not(:focus-within) {
+        .showcase-container:has(.card:hover) .card:not(:hover):not(:has(+ .pin-toggle:checked)),
+        .showcase-container:has(.card:focus-within) .card:not(:focus-within):not(:has(+ .pin-toggle:checked)),
+        .showcase-container:has(.pin-toggle:checked + .card) .card:not(:hover):not(:focus-within):not(:has(+ .pin-toggle:checked)) {
           height: 56px;
-        }
-
-        .showcase-container:hover .card.active:not(:hover) .content,
-        .showcase-container:focus-within
-          .card.active:not(:focus-within)
-          .content {
-          opacity: 0;
-        }
-
-        .showcase-container:hover .card.active:not(:hover) .title-collapsed,
-        .showcase-container:focus-within
-          .card.active:not(:focus-within)
-          .title-collapsed {
-          opacity: 1;
+          transform: translateY(0);
         }
 
         .title-collapsed {
@@ -786,9 +833,116 @@
           font-size: 12px;
         }
       }
-    </style>
+      /* window state: windowed by default, #maximized fills the viewport */
+      body:target {
+        padding: 0;
+      }
+
+      body:target .app {
+        height: 100vh;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      body:target .app:has(.window-minimize-checkbox:checked) {
+        height: auto;
+        min-height: 0;
+      }
+
+      .dot.restore {
+        display: none;
+        background: #28c840;
+      }
+
+      .dot.restore:hover {
+        background: #1db954;
+      }
+
+      body:target .dot.maximize {
+        display: none;
+      }
+
+      body:target .dot.restore {
+        display: block;
+      }
+
+      .chrome-nav-max {
+        display: none;
+      }
+
+      body:target .chrome-nav:not(.chrome-nav-max) {
+        display: none;
+      }
+
+      body:target .chrome-nav-max {
+        display: flex;
+      }
+
+      .chrome-utils-max {
+        display: none;
+      }
+
+      body:target .chrome-utils:not(.chrome-utils-max) {
+        display: none;
+      }
+
+      body:target .chrome-utils-max {
+        display: flex;
+      }
+
+      @media screen and (max-width: 480px) {
+        body:target .chrome-utils-max {
+          display: none;
+        }
+      }
+
+/* window close -> dock */
+.window-close-checkbox { display: none; }
+.app-dock {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(140%) scale(0.7);
+  opacity: 0;
+  z-index: 9999;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+  pointer-events: none;
+}
+.app-dock label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(30,30,32,0.55);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+  cursor: pointer;
+}
+.app-dock img { width: 48px; height: 48px; border-radius: 10px; }
+/* base app transition for close/open */
+.app {
+  transform-origin: center bottom;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.25, 1), opacity 0.3s ease;
+}
+.app:has(.window-close-checkbox:checked) {
+  transform: scale(0.2) translateY(60vh);
+  opacity: 0;
+  pointer-events: none;
+}
+body:has(.window-close-checkbox:checked) .app-dock {
+  transform: translateX(-50%) translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+</style>
   </head>
-  <body translate="no">
+  <body id="maximized" translate="no">
     <div class="video-bg">
       <video
         autoplay
@@ -808,15 +962,17 @@
         id="window-minimize"
         class="window-minimize-checkbox"
       />
+    <input type="checkbox" id="window-close" class="window-close-checkbox" />
       <div class="window-chrome">
         <div class="traffic-lights">
-          <span class="dot close"></span>
+          <label for="window-close" class="dot close" aria-label="Close window"></label>
           <label
             for="window-minimize"
             class="dot minimize"
             aria-label="Minimize window"
           ></label>
-          <span class="dot maximize"></span>
+          <a class="dot maximize" href="#maximized" aria-label="Maximize window" title="Maximize"></a>
+          <a class="dot restore" href="#" aria-label="Restore window" title="Restore"></a>
         </div>
         <span class="window-title">Studio Franco</span>
         <div class="chrome-spacer"></div>
@@ -824,8 +980,15 @@
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <a href="portfolio.html">Portfolio</a>
-          <a href="blog.html">Posts</a>
+          <a href="blog.html">Blog</a>
           <a class="is-active" href="connect.html">Connect</a>
+        </nav>
+        <nav class="chrome-nav chrome-nav-max">
+          <a href="index.html#maximized">Home</a>
+          <a href="about.html#maximized">About</a>
+          <a href="portfolio.html#maximized">Portfolio</a>
+          <a href="blog.html#maximized">Blog</a>
+          <a class="is-active" href="connect.html#maximized">Connect</a>
         </nav>
         <div class="chrome-utils">
           <a href="connect.html" class="icon-btn" aria-label="Notifications">
@@ -842,9 +1005,9 @@
               <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" />
               <path d="M13.73 21a2 2 0 01-3.46 0" />
             </svg>
-            <span class="notification-number">3</span>
+            <span class="notification-number"></span>
           </a>
-          <a href="blog.html" class="icon-btn" aria-label="Blog posts">
+          <a href="Assets/resume-nickolas-franco-2026.pdf" class="icon-btn" aria-label="Resume" target="_blank"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
             <svg
               viewbox="0 0 24 24"
               fill="none"
@@ -870,44 +1033,89 @@
             />
           </a>
         </div>
+<div class="chrome-utils chrome-utils-max">
+          <a href="connect.html#maximized" class="icon-btn" aria-label="Notifications">
+            <svg
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              width="20"
+              height="20"
+            >
+              <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" />
+              <path d="M13.73 21a2 2 0 01-3.46 0" />
+            </svg>
+            <span class="notification-number"></span>
+          </a>
+          <a href="Assets/resume-nickolas-franco-2026.pdf" class="icon-btn" aria-label="Resume" target="_blank"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <svg
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              width="20"
+              height="20"
+            >
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
+          </a>
+          <a href="about.html#maximized" class="icon-btn" aria-label="Profile">
+            <img
+              class="profile-img"
+              src="Assets/Profile_small.webp"
+              alt="Nickolas Franco"
+            />
+          </a>
+        </div>
       </div>
       <div class="window-content">
         <div class="showcase-container" tabindex="0">
-          <div class="card">
+          <input type="checkbox" id="pin-0" class="pin-toggle" />
+          <label for="pin-0" class="card" tabindex="0">
             <span class="title-collapsed">X.com</span>
             <div class="content">
               <h2 class="title">X.com</h2>
               <p class="description">
-                I don't post to impress, I post to document.
+                Barely post. Mostly here to read and watch. The occasional thought when it's actually worth it.
               </p>
               <a
                 class="preview-btn"
                 href="https://twitter.com/ItsNickoFranco"
                 target="_blank"
-                >Read the noise</a
+                >See what's here</a
               >
             </div>
-          </div>
-          <div class="card" tabindex="0">
+          </label>
+          <input type="checkbox" id="pin-1" class="pin-toggle" />
+          <label for="pin-1" class="card" tabindex="0">
             <span class="title-collapsed">Instagram</span>
             <div class="content">
               <h2 class="title">Instagram</h2>
-              <p class="description">No filters, just progress.</p>
+              <p class="description">Photos of museums I visit, places I go, and events I'm at.</p>
               <a
                 class="preview-btn"
                 href="https://instagram.com/itsnickofranco"
                 target="_blank"
-                >It's not curated</a
+                >Take a look</a
               >
             </div>
-          </div>
-          <div class="card" tabindex="0">
+          </label>
+          <input type="checkbox" id="pin-2" class="pin-toggle" />
+          <label for="pin-2" class="card" tabindex="0">
             <span class="title-collapsed">LinkedIn</span>
             <div class="content">
               <h2 class="title">LinkedIn</h2>
               <p class="description">
-                Not chasing titles. Just stacking skills. Connect if you're
-                building too.
+                Here for the work, not the feed. Connect if you're building something too.
               </p>
               <a
                 class="preview-btn"
@@ -916,12 +1124,13 @@
                 >View the paper trail</a
               >
             </div>
-          </div>
-          <div class="card" tabindex="0">
+          </label>
+          <input type="checkbox" id="pin-3" class="pin-toggle" />
+          <label for="pin-3" class="card" tabindex="0">
             <span class="title-collapsed">GitHub</span>
             <div class="content">
               <h2 class="title">GitHub</h2>
-              <p class="description">Projects that speak for themselves.</p>
+              <p class="description">Code I've written, projects I've shipped, and experiments I've run.</p>
               <a
                 class="preview-btn"
                 href="https://github.com/ItsNicko"
@@ -929,65 +1138,75 @@
                 >Look under the hood</a
               >
             </div>
-          </div>
-          <div class="card" tabindex="0">
-            <span class="title-collapsed">Youtube</span>
+          </label>
+          <input type="checkbox" id="pin-4" class="pin-toggle" />
+          <label for="pin-4" class="card" tabindex="0">
+            <span class="title-collapsed">YouTube</span>
             <div class="content">
-              <h2 class="title">Youtube</h2>
-              <p class="description">Check out my videos.</p>
+              <h2 class="title">YouTube</h2>
+              <p class="description">Nothing up yet. If I ever post, it'll be builds and lessons learned the hard way.</p>
               <a
                 class="preview-btn"
                 href="https://youtube.com/@ItsNickoFranco"
                 target="_blank"
-                >Follow before it's cool</a
+                >Check back later</a
               >
             </div>
-          </div>
-          <div class="card" tabindex="0">
+          </label>
+          <input type="checkbox" id="pin-5" class="pin-toggle" />
+          <label for="pin-5" class="card" tabindex="0">
             <span class="title-collapsed">TikTok</span>
             <div class="content">
               <h2 class="title">TikTok</h2>
-              <p class="description">If you're here for the real - welcome.</p>
+              <p class="description">I don't really post here. It's mostly a place I lurk.</p>
               <a
                 class="preview-btn"
                 href="https://www.tiktok.com/@itsnickofranco"
                 target="_blank"
-                >Look, don't scroll</a
+                >Take a peek</a
               >
             </div>
-          </div>
-          <div class="card" tabindex="0">
-            <span class="title-collapsed">In Progress</span>
+          </label>
+          <input type="checkbox" id="pin-6" class="pin-toggle" />
+          <label for="pin-6" class="card" tabindex="0">
+            <span class="title-collapsed">Portfolio</span>
             <div class="content">
-              <h2 class="title">In Progress</h2>
+              <h2 class="title">Portfolio</h2>
               <p class="description">
-                Rebuilding this site from scratch. Cleaning up old projects,
-                refining my tools, and shipping things that actually work.
-                Focused on design, automation, and leveling up fast.
+                Rebuilding this site from scratch. Cleaning up old projects, refining my tools, and shipping things that actually work. Focused on design, automation, and leveling up fast.
               </p>
-              <a class="preview-btn" href="current.html">Peek under the hood</a>
+              <a class="preview-btn" href="portfolio.html">Peek under the hood</a>
             </div>
-          </div>
-          <div class="card active" tabindex="0">
+          </label>
+          <input type="checkbox" id="pin-7" class="pin-toggle" />
+          <label for="pin-7" class="card" tabindex="0">
             <span class="title-collapsed">Contact</span>
             <div class="content">
               <h2 class="title">Contact</h2>
-              <p class="description">Got something real? Reach out at:</p>
+              <p class="description">Got a project, question, or just want to say hi?</p>
               <p class="description">nicko@studiofran.co</p>
               <p class="description">
-                I usually respond within 48 hours. Keep it clear and to the
-                point - I'll get back to you as soon as I can.
+                I reply when I can usually within a couple days. No need to be formal.
               </p>
               <a class="preview-btn" href="mailto:nicko@studiofran.co"
                 >Shoot your shot</a
               >
             </div>
-          </div>
+          </label>
         </div>
         <footer>
-          <p>© 2025 Nicko | Built with raw HTML + CSS.</p>
+          <p>© 2026 Nicko | Built with raw HTML + CSS.</p>
         </footer>
       </div>
+  </div>
+        <div class="app-dock" aria-hidden="false">
+      <label for="window-close" aria-label="Restore window">
+        <img src="Assets/favicon/android-chrome-512x512.png" alt="Open app" />
+      </label>
     </div>
   </body>
 </html>
+
+
+
+
