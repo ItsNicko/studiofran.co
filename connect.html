@@ -378,6 +378,23 @@
         .chrome-utils {
           display: none;
         }
+
+        .window-title,
+        .traffic-lights,
+        .chrome-spacer {
+          display: none;
+        }
+
+        .chrome-nav {
+          width: 100%;
+          justify-content: space-between;
+          gap: 0;
+        }
+
+        .chrome-nav a {
+          padding: 6px 7px;
+          font-size: 0.75rem;
+        }
       }
 
       a {
@@ -758,10 +775,10 @@
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
-          padding: 12px;
+          padding: 12px 0;
           overflow-x: hidden;
           overflow-y: auto;
-          max-width: calc(100% - 20px);
+          max-width: 100%;
           margin: 0 auto;
           width: 100%;
         }
@@ -769,8 +786,9 @@
         .card {
           width: 100%;
           min-width: 100%;
-          max-width: calc(100% - 20px);
+          max-width: 100%;
           height: 56px;
+          padding: 0 16px;
           margin-bottom: 8px;
           border: 1px solid rgba(255, 255, 255, 0.08);
           transition:
@@ -781,19 +799,19 @@
         }
 
         .showcase-container:not(:has(.card:hover)):not(:has(.card:focus-within)):not(:has(.pin-toggle:checked)) .card:last-child {
-          height: 260px;
+          height: 280px;
           transform: translateY(-3px);
         }
 
         .pin-toggle:checked + .card {
-          height: 260px;
+          height: 280px;
           width: 100%;
           transform: translateY(-3px);
         }
 
         .card:hover,
         .card:focus-within {
-          height: 260px;
+          height: 280px;
           width: 100%;
           transform: translateY(-3px);
         }
@@ -1025,7 +1043,7 @@ body:has(.window-close-checkbox:checked) .app-dock {
               <polyline points="10 9 9 9 8 9" />
             </svg>
           </a>
-          <a href="about.html" class="icon-btn" aria-label="Profile">
+          <a href="https://photos.studiofran.co/" class="icon-btn" aria-label="Photo archive">
             <img
               class="profile-img"
               src="Assets/Profile_small.webp"
@@ -1068,7 +1086,7 @@ body:has(.window-close-checkbox:checked) .app-dock {
               <polyline points="10 9 9 9 8 9" />
             </svg>
           </a>
-          <a href="about.html#maximized" class="icon-btn" aria-label="Profile">
+          <a href="https://photos.studiofran.co/" class="icon-btn" aria-label="Photo archive">
             <img
               class="profile-img"
               src="Assets/Profile_small.webp"
